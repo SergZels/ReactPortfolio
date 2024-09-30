@@ -1,6 +1,6 @@
 const logotext = "ZelseSoft";
 const meta = {
-    title: "Sergey Zelinskii",
+    title: "Portfolio Sergey Zelinskii",
     description: "I am a chatbot developer. I love creating beautiful and functional Telegram bots!",
 };
 
@@ -112,7 +112,7 @@ const dataportfolio = [{
 PostgreSQL DB
 Backend on Django
 Frontend is the bot itself using aiogram`,
-link: "https://orxid.in.ua/",
+link: "/Pr1",
     },
     {
         img: "https://zelse.asuscomm.com/portfolio/img/port2.jpg",
