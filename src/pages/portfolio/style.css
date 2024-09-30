@@ -14,7 +14,7 @@
     margin: 0.5rem auto;
     position: relative;
     background: var(--secondary-color);
-    padding: 6px;
+    padding: 5px;
     border: 1px solid var(--secondary-color);
     transition: 0.3s ease;
     font-size: 0;
@@ -73,6 +73,7 @@
     padding: 4px 8px;
     text-align: center;
     font-size: 1rem;
+    margin-top: 5px;
 }
 
 .po_item .content a:hover {

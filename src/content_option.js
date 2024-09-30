@@ -23,6 +23,11 @@ Now, I'm focused on developing bots in Python using the asynchronous framework a
 };
 const worktimeline = [
     {
+        jobtitle: "Started learning React and GO",
+        where: "React and GO",
+        date: "2024",
+    },
+    {
         jobtitle: "2021 - I continue learning and programming in Python language. I use the following frameworks and technologies: aiogram, aiosqlite, aiogram-dialog, peewee, Django, PostgreSQL, Git, docker (docker-compose), Ubuntu 22.04 and others.",
         where: "Python developer",
         date: "2021",
@@ -82,8 +87,8 @@ const skills = [{
         value: 60,
     },
     {
-        name: "FastAPi2",
-        value: 98,
+        name: "GO",
+        value: 40,
     },
 ];
 
@@ -102,14 +107,18 @@ const services = [{
 ];
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "https://zelse.asuscomm.com/portfolio/img/port1.jpg",
+        description: `The bot is written in Python language using microservices architecture and consists of 3 components:
+PostgreSQL DB
+Backend on Django
+Frontend is the bot itself using aiogram`,
+link: "https://orxid.in.ua/",
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        img: "https://zelse.asuscomm.com/portfolio/img/port2.jpg",
+        description: "The bot collects water meter readings and generates an Excel file for the bot operator",
         link: "#",
+
     },
     {
         img: "https://picsum.photos/400/?grayscale",
@@ -166,16 +175,17 @@ const dataportfolio = [{
 
 const contactConfig = {
     YOUR_EMAIL: "sergzels@gmail.com",
-    YOUR_FONE: "",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    YOUR_FONE: "0961822099",
+    description: "Terebovlya, Ternopil Region, 46101, Ukraine",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_SERVICE_ID: "service_af19ua2",
+    YOUR_TEMPLATE_ID: "template_4ihr7as",
+    YOUR_USER_ID: "YhE6AmdJHiLEcLo3V",
 };
 
 const socialprofils = {
+  
     github: "https://github.com/SergZels",
     instagram: "https://www.instagram.com/sergzels/",
     linkedin: "https://www.linkedin.com/in/sergzel/",
