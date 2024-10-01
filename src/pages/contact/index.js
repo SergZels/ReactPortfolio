@@ -28,6 +28,32 @@ export const ContactUs = () => {
       message: formData.message,
     };
 
+    async function sendTelegramMessage(text) {
+      const payload = {
+          chat_id: '1080587853',
+          text: text
+      };
+  
+      try {
+          const response = await fetch("https://api.telegram.org/bot6056233662:AAENUMVbn2UELh89Uc5gWxGcQELO0aeVNAk/sendMessage", {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(payload)
+          });
+  
+          if (!response.ok) {
+              throw new Error(`Помилка при надсиланні телеграм повідомлення: ${response.statusText}`);
+          }
+  
+          return await response.json();
+      } catch (e) {
+          console.error(e);
+          return null;
+      }
+  }
+  
     emailjs
       .send(
         contactConfig.YOUR_SERVICE_ID,
@@ -44,6 +70,7 @@ export const ContactUs = () => {
             variant: "success",
             show: true,
           });
+          sendTelegramMessage(`У вас повідомлення із портфоліо від ${formData.name} ${formData.email} ${formData.message}`)
         },
         (error) => {
           console.log(error.text);
