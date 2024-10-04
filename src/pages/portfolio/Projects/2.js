@@ -8,11 +8,10 @@ import {
   FaInternetExplorer
 } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa"; 
-import './Project2.css';
-
+import './Project.css';
 
 export default function Project2(){
-   
+  
    
     return(
       <HelmetProvider>
@@ -52,9 +51,16 @@ export default function Project2(){
         </Row>
         {projest2['photo'].map((item) => (
         <Row className="sec_sp">
-          <Col lg="5">
-            <h4 className="color_sec py-4">{item.title}</h4>
-          </Col>
+           <Col lg="5">
+      <h4 className="color_sec py-4">{item.title.split('\n')[0]}</h4>
+      {item.title.includes('-') && (
+        <ul>
+          {item.title.split('\n').slice(1).map((line, i) => (
+            <li key={i}>- {line.replace(/^\s*-\s*/, '')}</li> // Видалення дефісу з початку
+          ))}
+        </ul>
+      )}
+    </Col>
           <Col lg="7" className="d-flex align-items-center">
          <img
               srcSet={`${item.img}`}
@@ -82,20 +88,20 @@ Frontend is the bot itself using aiogram`,
     'photo':[
     {
       img: 'https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/31c12130-f8a7-4ca1-acdf-b158b62ce3c0',
-      title: `This is a large project that I have been developing for several months.`,
+      title: `This is a large project that I have been developing for several months. The project is developed on Django, PostgreSQL database.`,
     },
     {
       img: 'https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/c643d14c-8d54-43dc-ae04-a424e5035fc2',
-      title: 'The project is developed on Django, PostgreSQL database.',
+      title: `The customer has the opportunity to:
+      - Keep records of orders,
+      - Print labels and invoices
+      - Work with a spare parts warehouse
+      - Keep track of the salaries of craftsmen
+       and more`,
     },
     {
       img: 'https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/648df716-b9ab-483c-becd-a9d68dec4e76',
-      title: `The customer has the opportunity to:
-      - Keep records of orders,
-- Print labels and invoices
-- Work with a spare parts warehouse
-- Keep track of the salaries of craftsmen
-and more`,
+      title: ``,
     },
     {img: 'https://www.youtube.com/shorts/a4DmC3CdNVc',
       title: ``,
