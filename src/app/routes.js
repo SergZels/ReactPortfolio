@@ -9,6 +9,8 @@ import { Socialicons } from "../components/socialicons";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Project1 from "../pages/portfolio/Projects/1";
 import Project2 from "../pages/portfolio/Projects/2";
+import CzechBeads from "../pages/portfolio/Projects/CzechBeads";
+import OrxidBotViber from "../pages/portfolio/Projects/OrxidBotVib";
 
 const AnimatedRoutes = withRouter(({ location }) => (
   <TransitionGroup>
@@ -28,7 +30,8 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/Project1" element={<Project1 />} />
         <Route path="/Project2" element={<Project2 />} />
-      
+        <Route path="/CzechBeads" element={<CzechBeads />} />
+        <Route path="/OrxidBot" element={<OrxidBotViber  />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </CSSTransition>

@@ -147,13 +147,13 @@ const services = [{
 
 const dataportfolio = [{
         img: "https://zelse.asuscomm.com/portfolio/img/port1.jpg",
-        description: ``,
+        description: `Telegram bot`,
         link: "/Project1",
 
     },
     {
         img: "https://zelse.asuscomm.com/PortfolioStatic/Bybit/1.jpg",
-        description: "Bybit",
+        description: "Bybit copy Trading (GOlang)",
         link: "#",
     },
     {
@@ -169,42 +169,56 @@ const dataportfolio = [{
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
+        img: "https://zelse.asuscomm.com/PortfolioStatic/Prokat/1.jpeg",
         description: "Стара кастомна CRM в Exel для с",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        img: "https://zelse.asuscomm.com/PortfolioStatic/Atele/1.jpeg",
+        description: "Old custom CRM for my family biznes",
         link: "#",
     },
+    {
+        img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/3149f402-155f-4f53-a4bb-7c26d562dafd",
+        description: "Pet project",
+        link: "/CzechBeads",
+    },
+    {
+        img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/a003ede0-8e96-4c43-9b31-cda8a1663d45",
+        description: "Smart Bot for my family biznes (Viber) ",
+        link: "/OrxidBot",
+    },
+    {
+        img: "https://zelse.asuscomm.com/PortfolioStatic/Gingr/1.jpg",
+        description: "Data Analist project",
+        link: "/OrxidBot",
+    },
+    {
+        img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/6d8a6e38-0a86-485d-b334-1901fbd1ebac",
+        description: "Bot for my family biznes",
+        link: "/OrxidBot",
+    },
+    {
+        img: "https://zelse.asuscomm.com/PortfolioStatic/BiznesStatistic/1.jpg",
+        description: `Accounting software for my family business`,
+        link: "/OrxidBot",
+    },
+    {
+        img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/6a9bde64-f1d8-40eb-899c-1564275b18ef",
+        description: `Shop for sale eSim (Make.com)`,
+        link: "/OrxidBot",
+    },
+    {
+        img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/5b266142-31c5-4288-adf2-709235a520e7",
+        description: ` A small project on Flask`,
+        link: "/OrxidBot",
+    },
+   
    
 
 ];
 
-const projest1 = {
-    'name':'Information bot',
-    'title':`The bot is written in Python language using microservices architecture and consists of 3 components:
-PostgreSQL DB
-Backend on Django
-Frontend is the bot itself using aiogram`,
-    'photo':[
-    {
-      img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-      title: `The bot is written in Python language using microservices architecture and consists of 3 components:
-PostgreSQL DB
-Backend on Django
-Frontend is the bot itself using aiogram`,
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-      title: 'Burger23',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-      title: 'Camera445',
-    },
-  ]};
+
 
 
  
@@ -237,6 +251,5 @@ export {
     contactConfig,
     socialprofils,
     logotext,
-    projest1,
- 
+
 };

@@ -5,12 +5,13 @@ import {
   FaGithub,
   FaYoutube,
   FaInstagram,
+  FaViber,
   FaInternetExplorer
 } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa"; 
 import './Project.css';
 
-export default function Project1(){
+export default function OrxidBotViber(){
   
    
     return(
@@ -27,23 +28,18 @@ export default function Project1(){
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
           <Col lg="1">
-          <a href="https://orxid.in.ua/InfoBot/admin/login/?next=/InfoBot/admin/" target="_blank" rel="noopener noreferrer">
-              <FaInternetExplorer size={40} />
+          <a href="https://orxid.in.ua/ViberBotOrxid.php" target="_blank" rel="noopener noreferrer">
+              < FaViber size={40} />
             </a>
           </Col>
       
-          <Col lg="1">
-          <a href="https://t.me/TerInfobot" target="_blank" rel="noopener noreferrer">
-              <FaTelegramPlane size={40} />
-            </a>
-          </Col>
-          <Col lg="1">
-          <a href="https://github.com/SergZels/TerInfoBot" target="_blank" rel="noopener noreferrer">
+         <Col lg="1">
+          <a href="https://github.com/SergZels/Czech_beads_V2" target="_blank" rel="noopener noreferrer">
               <FaGithub size={40} />
             </a>
           </Col>
           <Col lg="1">
-          <a href="https://www.youtube.com/shorts/a4DmC3CdNVc" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.youtube.com/shorts/In914tL6zbo" target="_blank" rel="noopener noreferrer">
               <FaYoutube size={40} />
             </a>
           </Col>
@@ -80,18 +76,12 @@ export default function Project1(){
 }
 
   const projest = {
-    'name':'Information bot',
-    'title':`The bot is written in Python language using microservices architecture and consists of 3 components:
-PostgreSQL DB
-Backend on Django
-Frontend is the bot itself using aiogram`,
+    'name':'OrxidBot',
+    'title':``,
     'photo':[
     {
-      img: 'https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/d33326cd-cf9b-4a79-9ed4-49189eb01af7',
-      title: `The bot is written in Python language using microservices architecture and consists of 3 components:
-- PostgreSQL DB
-- Backend on Django
-- Frontend is the bot itself using aiogram`,
+      img: 'https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/a003ede0-8e96-4c43-9b31-cda8a1663d45',
+      title: ` Viber Bot - a virtual employee of Orchid atelier, which provides answers to clients' questions about services, prices, contacts, and much more. This bot works together with an operator.`,
     },
   
   ]};
