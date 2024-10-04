@@ -8,8 +8,8 @@ const introdata = {
     title: "Sergey Zelinskii",
     animated: {
         first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        second: "I code cool bots",
+        third: "I develop CRM",
     },
     description: "I am a chatbot developer. I love creating beautiful and functional Telegram bots!",
     your_img_url: "https://zelse.asuscomm.com/portfolio/img/hero.jpg",
@@ -59,7 +59,11 @@ const skills = [{
         value: 90,
     },
     {
-        name: "Djano",
+        name: "Aiogram",
+        value: 90,
+    },
+    {
+        name: "Django",
         value: 70,
     },
     {
@@ -71,24 +75,59 @@ const skills = [{
         value: 40,
     },
     {
+        name: "Postgresql | Sqlite",
+        value: 60,
+    },
+    {
+        name: "SQL | aiosqlite | sqlite3",
+        value: 70,
+    },
+   
+    {
+        name: "SQLAlchemy | Peewee | Django ORM ",
+        value: 60,
+    },
+    {
+        name: "HTML | CSS | Bootstrap",
+        value: 60,
+    },
+    {
         name: "Javascript",
-        value: 60,
+        value: 50,
     },
     {
-        name: "React",
+        name: "HTMX | Alpine js",
+        value: 50,
+    },
+    {
+        name: "React | MUI",
+        value: 40,
+    },
+ 
+
+    {
+        name: "GO (Gin)",
         value: 40,
     },
     {
-        name: "Aiogram",
-        value: 85,
+        name: "PHP",
+        value: 30,
     },
     {
-        name: "SQL",
+        name: "Java",
+        value: 20,
+    },
+    {
+        name: "VBA (Exel, Access)",
+        value: 80,
+    },
+    {
+        name: "Make.com",
+        value: 70,
+    },
+    {
+        name: "Docker (Docker-compose) | Nginx | Linux ",
         value: 60,
-    },
-    {
-        name: "GO",
-        value: 40,
     },
 ];
 
@@ -108,17 +147,14 @@ const services = [{
 
 const dataportfolio = [{
         img: "https://zelse.asuscomm.com/portfolio/img/port1.jpg",
-        description: `The bot is written in Python language using microservices architecture and consists of 3 components:
-PostgreSQL DB
-Backend on Django
-Frontend is the bot itself using aiogram`,
-link: "/PortfolioReact/Pr1",
+        description: ``,
+link: "/Project1",
 
     },
     {
-        img: "https://zelse.asuscomm.com/portfolio/img/port2.jpg",
-        description: "The bot collects water meter readings and generates an Excel file for the bot operator",
-        link: "#",
+        img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/5f026fe2-5af0-47cc-8636-d747bda3189b",
+        description: "Large custom CRM for a phone repair shop",
+        link: "/Project2",
 
     },
     {
@@ -174,57 +210,32 @@ link: "/PortfolioReact/Pr1",
     },
 ];
 
-const itemData = [
+const projest1 = {
+    'name':'Information bot',
+    'title':`The bot is written in Python language using microservices architecture and consists of 3 components:
+PostgreSQL DB
+Backend on Django
+Frontend is the bot itself using aiogram`,
+    'photo':[
     {
       img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-      title: 'Breakfast',
+      title: `The bot is written in Python language using microservices architecture and consists of 3 components:
+PostgreSQL DB
+Backend on Django
+Frontend is the bot itself using aiogram`,
     },
     {
       img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-      title: 'Burger',
+      title: 'Burger23',
     },
     {
       img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-      title: 'Camera',
+      title: 'Camera445',
     },
-    {
-      img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-      title: 'Coffee',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-      title: 'Hats',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-      title: 'Honey',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-      title: 'Basketball',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-      title: 'Fern',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-      title: 'Mushrooms',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-      title: 'Tomato basil',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-      title: 'Sea star',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-      title: 'Bike',
-    },
-  ];
+  ]};
 
+
+ 
 const contactConfig = {
     YOUR_EMAIL: "sergzels@gmail.com",
     YOUR_FONE: "0961822099",
@@ -254,5 +265,6 @@ export {
     contactConfig,
     socialprofils,
     logotext,
-    itemData
+    projest1,
+ 
 };

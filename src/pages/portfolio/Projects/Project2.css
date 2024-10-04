@@ -1,0 +1,25 @@
+.image-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.zoom-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out; /* Плавна анімація */
+  transform-origin: right center; /* Зміщення на лівий край */
+}
+
+.zoom-image:hover {
+  transform: scale(1.1); /* Збільшення при наведенні */
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .zoom-image:hover {
+    transform: scale(1.7); /* Збільшення до 200% на ширших екранах */
+  }
+}
+
+  
+  
