@@ -8,9 +8,14 @@ import { About } from "../pages/about";
 import { Socialicons } from "../components/socialicons";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Project1 from "../pages/portfolio/Projects/1";
-import Project2 from "../pages/portfolio/Projects/2";
+import RR from "../pages/portfolio/Projects/rrepair";
 import CzechBeads from "../pages/portfolio/Projects/CzechBeads";
 import OrxidBotViber from "../pages/portfolio/Projects/OrxidBotVib";
+import Museum from "../pages/portfolio/Projects/museum";
+import OrxidStatistics from "../pages/portfolio/Projects/OrxidStatistics";
+import BotPortfolio from "../pages/portfolio/Projects/BotPortfolio";
+import StaticSite from "../pages/portfolio/Projects/StaticSite";
+import Guard from "../pages/portfolio/Projects/Guard";
 
 const AnimatedRoutes = withRouter(({ location }) => (
   <TransitionGroup>
@@ -29,9 +34,14 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/Project1" element={<Project1 />} />
-        <Route path="/Project2" element={<Project2 />} />
+        <Route path="/RR" element={<RR/>} />
         <Route path="/CzechBeads" element={<CzechBeads />} />
         <Route path="/OrxidBot" element={<OrxidBotViber  />} />
+        <Route path="/Museum" element={<Museum  />} />
+        <Route path="/OrxidStatistics" element={<OrxidStatistics  />} />
+        <Route path="/BotPortfolio" element={<BotPortfolio  />} />
+        <Route path="/StaticSite" element={<StaticSite  />} />
+        <Route path="/Guard" element={<Guard  />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </CSSTransition>

@@ -11,7 +11,7 @@ const introdata = {
         second: "I code cool bots",
         third: "I develop CRM",
     },
-    description: "I am a chatbot developer. I love creating beautiful and functional Telegram bots!",
+    description: "Indie developer from 2012 | Freelanser from 2023",
     your_img_url: "https://zelse.asuscomm.com/portfolio/img/hero.jpg",
 };
 
@@ -159,7 +159,7 @@ const dataportfolio = [{
     {
         img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/5f026fe2-5af0-47cc-8636-d747bda3189b",
         description: "Large custom CRM for a phone repair shop",
-        link: "/Project2",
+        link: "/RR",
 
     },
  
@@ -201,7 +201,7 @@ const dataportfolio = [{
     {
         img: "https://zelse.asuscomm.com/PortfolioStatic/BiznesStatistic/1.jpg",
         description: `Accounting software for my family business`,
-        link: "/OrxidBot",
+        link: "/OrxidStatistics",
     },
     {
         img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/6a9bde64-f1d8-40eb-899c-1564275b18ef",
@@ -213,7 +213,28 @@ const dataportfolio = [{
         description: ` A small project on Flask`,
         link: "/OrxidBot",
     },
-   
+    {
+        img: "https://zelse.asuscomm.com/PortfolioStatic/Museum/fon.jpg",
+        description: `Desktop Assecc project`,
+        link: "/Museum",
+    },
+    {
+        img: "https://zelse.asuscomm.com/PortfolioStatic/OldPortfolio/1.png",
+        description: `Bot Portfolio`,
+        link: "/BotPortfolio",
+    },
+
+     {
+        img: "https://zelse.asuscomm.com/PortfolioStatic/StaticSite/2.png",
+        description: `Static Site`,
+        link: "/StaticSite",
+    },
+
+    {
+        img: "https://zelse.asuscomm.com/PortfolioStatic/Guard/1.jpg",
+        description: `Guard bot`,
+        link: "/Guard",
+    },
    
 
 ];

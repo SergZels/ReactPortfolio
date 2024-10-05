@@ -232,3 +232,16 @@ section {
 .intro_sec .h_bg-image {
     filter: saturate(1);
 }
+
+@media (max-width: 768px) {
+    .intro_btn-action {
+      display: flex;
+      flex-direction: column; /* Вертикальне вирівнювання на мобільних */
+      align-items: center;
+    }
+    
+    .ac_btn {
+      margin-bottom: 15px; /* Додаємо відступ між кнопками */
+      margin-right: 0; /* Забираємо горизонтальний відступ */
+    }
+}
