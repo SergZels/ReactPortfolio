@@ -154,7 +154,7 @@ const dataportfolio = [{
     {
         img: "https://zelse.asuscomm.com/PortfolioStatic/Bybit/1.jpg",
         description: "Bybit copy Trading (GOlang)",
-        link: "#",
+        link: "/ByBit",
     },
     {
         img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/5f026fe2-5af0-47cc-8636-d747bda3189b",
@@ -169,12 +169,12 @@ const dataportfolio = [{
         link: "#",
     },
     {
-        img: "https://zelse.asuscomm.com/PortfolioStatic/Prokat/1.jpeg",
+        img: "https://zelse.asuscomm.com/PortfolioStatic/Prokat/1.jpg",
         description: "Стара кастомна CRM в Exel для с",
         link: "#",
     },
     {
-        img: "https://zelse.asuscomm.com/PortfolioStatic/Atele/1.jpeg",
+        img: "https://zelse.asuscomm.com/PortfolioStatic/Atele/1.jpg",
         description: "Old custom CRM for my family biznes",
         link: "#",
     },
@@ -191,12 +191,12 @@ const dataportfolio = [{
     {
         img: "https://zelse.asuscomm.com/PortfolioStatic/Gingr/1.jpg",
         description: "Data Analist project",
-        link: "/OrxidBot",
+        link: "/Gingr",
     },
     {
-        img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/6d8a6e38-0a86-485d-b334-1901fbd1ebac",
+        img: "https://zelse.asuscomm.com/portfolio/img/port6.jpg",
         description: "Bot for my family biznes",
-        link: "/OrxidBot",
+        link: "/BotBiznesStatistics",
     },
     {
         img: "https://zelse.asuscomm.com/PortfolioStatic/BiznesStatistic/1.jpg",
@@ -226,7 +226,7 @@ const dataportfolio = [{
 
      {
         img: "https://zelse.asuscomm.com/PortfolioStatic/StaticSite/2.png",
-        description: `Static Site`,
+        description: `Static Site orxid.in.ua`,
         link: "/StaticSite",
     },
 
@@ -235,8 +235,22 @@ const dataportfolio = [{
         description: `Guard bot`,
         link: "/Guard",
     },
+    {
+        img: "https://zelse.asuscomm.com/PortfolioStatic/BeadsParser/1.jpg",
+        description: `Beads Parser Script`,
+        link: "/BeadsParser",
+    },
+    {
+        img: "https://zelse.asuscomm.com/portfolio/img/port2.jpg",
+        description: `Water meter Bot`,
+        link: "/WaterBot",
+    },
    
-
+    {
+        img: "https://zelse.asuscomm.com/portfolio/img/port7.jpg",
+        description: `Family Expenses Bot`,
+        link: "/FamilyExpenses",
+    },
 ];
 
 

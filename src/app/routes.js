@@ -16,6 +16,12 @@ import OrxidStatistics from "../pages/portfolio/Projects/OrxidStatistics";
 import BotPortfolio from "../pages/portfolio/Projects/BotPortfolio";
 import StaticSite from "../pages/portfolio/Projects/StaticSite";
 import Guard from "../pages/portfolio/Projects/Guard";
+import BeadsParser from "../pages/portfolio/Projects/BeadsParser";
+import  FamilyExpenses from "../pages/portfolio/Projects/FamilyExpenses";
+import  WaterBot from "../pages/portfolio/Projects/WaterBot";
+import  ByBit from "../pages/portfolio/Projects/ByBit";
+import  BotBiznesStatistics from "../pages/portfolio/Projects/BotBiznesStatistics";
+import  Gingr from "../pages/portfolio/Projects/Gingr";
 
 const AnimatedRoutes = withRouter(({ location }) => (
   <TransitionGroup>
@@ -42,6 +48,12 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/BotPortfolio" element={<BotPortfolio  />} />
         <Route path="/StaticSite" element={<StaticSite  />} />
         <Route path="/Guard" element={<Guard  />} />
+        <Route path="/BeadsParser" element={<BeadsParser  />} />
+        <Route path="/FamilyExpenses" element={< FamilyExpenses  />} />
+        <Route path="/WaterBot" element={<WaterBot  />} />
+        <Route path="/ByBit" element={<ByBit  />} />
+        <Route path="/BotBiznesStatistics" element={<BotBiznesStatistics  />} />
+        <Route path="/Gingr" element={<Gingr  />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </CSSTransition>

@@ -1,3 +1,4 @@
+
 import * as React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import { Helmet, HelmetProvider } from "react-helmet-async";
@@ -10,7 +11,7 @@ import {
 import { FaTelegramPlane } from "react-icons/fa"; 
 import './Project.css';
 
-export default function Project1(){
+export default function BotBiznesStatistics(){
   
    
     return(
@@ -26,24 +27,17 @@ export default function Project1(){
             <h5 className="display-4 mb-4">{projest['name']}</h5>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
+       
+      
+         
           <Col lg="1">
-          <a href="https://orxid.in.ua/InfoBot/admin/login/?next=/InfoBot/admin/" target="_blank" rel="noopener noreferrer">
-              <FaInternetExplorer size={40} />
+          <a href="https://github.com/SergZels/OrxidStatBot2" target="_blank" rel="noopener noreferrer">
+              <FaGithub size={40} />
             </a>
           </Col>
       
           <Col lg="1">
-          <a href="https://t.me/TerInfobot" target="_blank" rel="noopener noreferrer">
-              <FaTelegramPlane size={40} />
-            </a>
-          </Col>
-          <Col lg="1">
-          <a href="https://github.com/SergZels/TerInfoBot" target="_blank" rel="noopener noreferrer">
-              <FaGithub size={40} />
-            </a>
-          </Col>
-          <Col lg="1">
-          <a href="https://www.youtube.com/shorts/a4DmC3CdNVc" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.youtube.com/shorts/1qPdNgIkRyk" target="_blank" rel="noopener noreferrer">
               <FaYoutube size={40} />
             </a>
           </Col>
@@ -80,42 +74,13 @@ export default function Project1(){
 }
 
   const projest = {
-    'name':'Information bot',
-    'title':`The bot is written in Python language using microservices architecture and consists of 3 components:
-PostgreSQL DB
-Backend on Django
-Frontend is the bot itself using aiogram`,
+    'name':'BotBiznesStatistics',
+    'title':``,
     'photo':[
     {
-      img: 'https://zelse.asuscomm.com/PortfolioStatic/TerInfoBot/1.png',
-      title: `The bot is written in Python language using microservices architecture and consists of 3 components:
-- PostgreSQL DB
-- Backend on Django
-- Frontend is the bot itself using aiogram`,
-    },
-    {
-      img: 'https://zelse.asuscomm.com/PortfolioStatic/TerInfoBot/3.png',
-      title: ``,
-    },
-    {
-      img: 'https://zelse.asuscomm.com/PortfolioStatic/TerInfoBot/4.png',
-      title: ``,
-    },
-    {
-      img: 'https://zelse.asuscomm.com/PortfolioStatic/TerInfoBot/5.png',
-      title: ``,
-    },
-    {
-      img: 'https://zelse.asuscomm.com/PortfolioStatic/TerInfoBot/6.png',
-      title: ``,
-    },
-    {
-      img: 'https://zelse.asuscomm.com/PortfolioStatic/TerInfoBot/7.png',
-      title: ``,
-    },
-    {
-      img: 'https://zelse.asuscomm.com/PortfolioStatic/TerInfoBot/8.png',
-      title: ``,
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/WaterBot/1.png',
+      title: `The bot collects water meter readings and generates an Excel file for the bot operator
+Python aiogram`,
     },
   
   ]};
