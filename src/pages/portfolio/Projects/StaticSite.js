@@ -66,12 +66,12 @@ export default function StaticSite(){
 }
 
   const projest = {
-    'name':'Main site',
+    'name':'Our main site',
     'title':``,
     'photo':[
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/StaticSite/2.png',
-      title: ``,
+      title: `You can go to the site by following the link`,
     },
     {
         img: 'https://zelse.asuscomm.com/PortfolioStatic/StaticSite/1.png',

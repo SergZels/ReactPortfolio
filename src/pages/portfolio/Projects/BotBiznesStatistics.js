@@ -74,13 +74,12 @@ export default function BotBiznesStatistics(){
 }
 
   const projest = {
-    'name':'BotBiznesStatistics',
+    'name':'Biznes Statistics Bot',
     'title':``,
     'photo':[
     {
-      img: 'https://zelse.asuscomm.com/PortfolioStatic/WaterBot/1.png',
-      title: `The bot collects water meter readings and generates an Excel file for the bot operator
-Python aiogram`,
+      img: 'https://zelse.asuscomm.com/portfolio/img/port6.jpg',
+      title: `The daily revenue of the store is kept in the bot. The bot also provides statistical data (total revenue, minimum, maximum, etc.) in the form of charts. The work of the bot can be seen in the Youtube video. Link from above ☝️`,
     },
   
   ]};

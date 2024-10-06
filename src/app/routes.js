@@ -22,6 +22,11 @@ import  WaterBot from "../pages/portfolio/Projects/WaterBot";
 import  ByBit from "../pages/portfolio/Projects/ByBit";
 import  BotBiznesStatistics from "../pages/portfolio/Projects/BotBiznesStatistics";
 import  Gingr from "../pages/portfolio/Projects/Gingr";
+import  Prokat from "../pages/portfolio/Projects/Prokat";
+import  Atele from "../pages/portfolio/Projects/Atele";
+import  Dedit from "../pages/portfolio/Projects/Dedit";
+import  Make from "../pages/portfolio/Projects/Make";
+import  Poland from "../pages/portfolio/Projects/Poland";
 
 const AnimatedRoutes = withRouter(({ location }) => (
   <TransitionGroup>
@@ -54,6 +59,11 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/ByBit" element={<ByBit  />} />
         <Route path="/BotBiznesStatistics" element={<BotBiznesStatistics  />} />
         <Route path="/Gingr" element={<Gingr  />} />
+        <Route path="/Prokat" element={<Prokat  />} />
+        <Route path="/Atele" element={<Atele  />} />
+        <Route path="/Dedit" element={<Dedit  />} />
+        <Route path="/Make" element={<Make  />} />
+        <Route path="/Poland" element={<Poland  />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </CSSTransition>

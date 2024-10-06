@@ -145,100 +145,30 @@ const services = [{
     },
 ];
 
-const dataportfolio = [{
+const dataportfolio = [ {
+    img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/5f026fe2-5af0-47cc-8636-d747bda3189b",
+    description: "Large custom CRM for a phone repair shop",
+    link: "/RR",
+
+},
+{
+    img: "https://zelse.asuscomm.com/PortfolioStatic/Bybit/1.jpg",
+    description: "Bybit copy Trading (GOlang)",
+    link: "/ByBit",
+},
+    {
         img: "https://zelse.asuscomm.com/portfolio/img/port1.jpg",
         description: `Telegram bot`,
         link: "/Project1",
 
     },
-    {
-        img: "https://zelse.asuscomm.com/PortfolioStatic/Bybit/1.jpg",
-        description: "Bybit copy Trading (GOlang)",
-        link: "/ByBit",
-    },
-    {
-        img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/5f026fe2-5af0-47cc-8636-d747bda3189b",
-        description: "Large custom CRM for a phone repair shop",
-        link: "/RR",
-
-    },
+    
+   
  
     {
         img: "https://zelse.asuscomm.com/PortfolioStatic/dEditBot/1.png",
         description: "dEdit bot",
-        link: "#",
-    },
-    {
-        img: "https://zelse.asuscomm.com/PortfolioStatic/Prokat/1.jpg",
-        description: "Стара кастомна CRM в Exel для с",
-        link: "#",
-    },
-    {
-        img: "https://zelse.asuscomm.com/PortfolioStatic/Atele/1.jpg",
-        description: "Old custom CRM for my family biznes",
-        link: "#",
-    },
-    {
-        img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/3149f402-155f-4f53-a4bb-7c26d562dafd",
-        description: "Pet project",
-        link: "/CzechBeads",
-    },
-    {
-        img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/a003ede0-8e96-4c43-9b31-cda8a1663d45",
-        description: "Smart Bot for my family biznes (Viber) ",
-        link: "/OrxidBot",
-    },
-    {
-        img: "https://zelse.asuscomm.com/PortfolioStatic/Gingr/1.jpg",
-        description: "Data Analist project",
-        link: "/Gingr",
-    },
-    {
-        img: "https://zelse.asuscomm.com/portfolio/img/port6.jpg",
-        description: "Bot for my family biznes",
-        link: "/BotBiznesStatistics",
-    },
-    {
-        img: "https://zelse.asuscomm.com/PortfolioStatic/BiznesStatistic/1.jpg",
-        description: `Accounting software for my family business`,
-        link: "/OrxidStatistics",
-    },
-    {
-        img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/6a9bde64-f1d8-40eb-899c-1564275b18ef",
-        description: `Shop for sale eSim (Make.com)`,
-        link: "/OrxidBot",
-    },
-    {
-        img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/5b266142-31c5-4288-adf2-709235a520e7",
-        description: ` A small project on Flask`,
-        link: "/OrxidBot",
-    },
-    {
-        img: "https://zelse.asuscomm.com/PortfolioStatic/Museum/fon.jpg",
-        description: `Desktop Assecc project`,
-        link: "/Museum",
-    },
-    {
-        img: "https://zelse.asuscomm.com/PortfolioStatic/OldPortfolio/1.png",
-        description: `Bot Portfolio`,
-        link: "/BotPortfolio",
-    },
-
-     {
-        img: "https://zelse.asuscomm.com/PortfolioStatic/StaticSite/2.png",
-        description: `Static Site orxid.in.ua`,
-        link: "/StaticSite",
-    },
-
-    {
-        img: "https://zelse.asuscomm.com/PortfolioStatic/Guard/1.jpg",
-        description: `Guard bot`,
-        link: "/Guard",
-    },
-    {
-        img: "https://zelse.asuscomm.com/PortfolioStatic/BeadsParser/1.jpg",
-        description: `Beads Parser Script`,
-        link: "/BeadsParser",
+        link: "/Dedit",
     },
     {
         img: "https://zelse.asuscomm.com/portfolio/img/port2.jpg",
@@ -251,6 +181,83 @@ const dataportfolio = [{
         description: `Family Expenses Bot`,
         link: "/FamilyExpenses",
     },
+    {
+        img: "https://zelse.asuscomm.com/PortfolioStatic/Prokat/1.jpg",
+        description: "Стара кастомна CRM в Exel для с",
+        link: "/Prokat",
+    },
+    {
+        img: "https://zelse.asuscomm.com/PortfolioStatic/Atele/1.jpg",
+        description: "Old custom CRM for my family biznes",
+        link: "/Atele",
+    },
+   
+    {
+        img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/a003ede0-8e96-4c43-9b31-cda8a1663d45",
+        description: "Smart Bot for my family biznes (Viber) ",
+        link: "/OrxidBot",
+    },
+   
+    {
+        img: "https://zelse.asuscomm.com/portfolio/img/port6.jpg",
+        description: "Bot for my family biznes",
+        link: "/BotBiznesStatistics",
+    },
+    {
+        img: "https://zelse.asuscomm.com/PortfolioStatic/BiznesStatistic/1.jpg",
+        description: `Accounting software for my family business`,
+        link: "/OrxidStatistics",
+    },
+    {
+        img: "https://zelse.asuscomm.com/PortfolioStatic/StaticSite/2.png",
+        description: `Static Site orxid.in.ua`,
+        link: "/StaticSite",
+    },
+    {
+        img: "https://zelse.asuscomm.com/PortfolioStatic/BeadsParser/1.jpg",
+        description: `Beads Parser Script`,
+        link: "/BeadsParser",
+    },
+    {
+        img: "https://zelse.asuscomm.com/PortfolioStatic/Gingr/1.jpg",
+        description: "Data Analist project",
+        link: "/Gingr",
+    },
+    {
+        img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/3149f402-155f-4f53-a4bb-7c26d562dafd",
+        description: "Pet project",
+        link: "/CzechBeads",
+    },
+    {
+        img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/6a9bde64-f1d8-40eb-899c-1564275b18ef",
+        description: `Shop for sale eSim (Make.com)`,
+        link: "/Make",
+    },
+    {
+        img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/5b266142-31c5-4288-adf2-709235a520e7",
+        description: ` A small project on Flask`,
+        link: "/Poland",
+    },
+    {
+        img: "https://zelse.asuscomm.com/PortfolioStatic/Museum/fon.jpg",
+        description: `Desktop Assecc project`,
+        link: "/Museum",
+    },
+    {
+        img: "https://zelse.asuscomm.com/PortfolioStatic/OldPortfolio/1.png",
+        description: `Bot Portfolio`,
+        link: "/BotPortfolio",
+    },
+
+  
+
+    {
+        img: "https://zelse.asuscomm.com/PortfolioStatic/Guard/1.jpg",
+        description: `Guard bot`,
+        link: "/Guard",
+    },
+ 
+ 
 ];
 
 

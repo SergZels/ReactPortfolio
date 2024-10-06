@@ -71,11 +71,11 @@ export default function BeadsParser(){
     'photo':[
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/BeadsParser/2.png',
-      title: ``,
+      title: `Дуже дуже корисний скрипт який допоміг зекономити багато годин рутинної праці. Скрипт парсить замовлення в exel файлі.`,
     },
     {
         img: 'https://zelse.asuscomm.com/PortfolioStatic/BeadsParser/3.png',
-        title: ``,
+        title: `Та розробляє лейби на товар для друку (Word)`,
       },
 
 

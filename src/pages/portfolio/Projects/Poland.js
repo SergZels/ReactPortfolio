@@ -1,3 +1,4 @@
+
 import * as React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import { Helmet, HelmetProvider } from "react-helmet-async";
@@ -10,7 +11,7 @@ import {
 import { FaTelegramPlane } from "react-icons/fa"; 
 import './Project.css';
 
-export default function FamilyExpenses(){
+export default function Poland(){
   
    
     return(
@@ -27,13 +28,16 @@ export default function FamilyExpenses(){
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
        
+      
+         
           <Col lg="1">
-          <a href="https://github.com/SergZels/familyExpenses" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/SergZels/OrxidStatBot2" target="_blank" rel="noopener noreferrer">
               <FaGithub size={40} />
             </a>
           </Col>
+      
           <Col lg="1">
-          <a href="https://www.youtube.com/shorts/NJ27k09QAR8" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.youtube.com/shorts/1qPdNgIkRyk" target="_blank" rel="noopener noreferrer">
               <FaYoutube size={40} />
             </a>
           </Col>
@@ -70,12 +74,12 @@ export default function FamilyExpenses(){
 }
 
   const projest = {
-    'name':'Family Expenses Bot',
+    'name':'Flask',
     'title':``,
     'photo':[
     {
-      img: 'https://zelse.asuscomm.com/portfolio/img/port7.jpg',
-      title: `A bot that makes it convenient to keep track of family expenses. The bot sends expense statistics charts. It also generates an HTML page with a complete list of expenses. The work of the bot can be seen in the Youtube video. Link from above ☝️`,
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Poland/1.jpg',
+      title: `Невеличкий проект який взаємодіє із нейромережею Midjourney та допомагає обрати одне із чотирох згенерованих фото.`,
     },
   
   ]};

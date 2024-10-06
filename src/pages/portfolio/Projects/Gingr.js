@@ -74,8 +74,18 @@ export default function Gingr(){
     'title':``,
     'photo':[
     {
-      img: 'https://zelse.asuscomm.com/portfolio/img/port7.jpg',
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Gingr/2.png',
       title: ``,
     },
+    {
+        img: 'https://zelse.asuscomm.com/PortfolioStatic/Gingr/3.png',
+        title: ``,
+      },
+  
+      {
+        img: 'https://zelse.asuscomm.com/PortfolioStatic/Gingr/4.png',
+        title: ``,
+      },
+    
   
   ]};

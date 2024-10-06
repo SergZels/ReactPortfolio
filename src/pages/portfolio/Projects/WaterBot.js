@@ -77,8 +77,7 @@ export default function WaterBot(){
     'photo':[
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/WaterBot/1.png',
-      title: `The bot collects water meter readings and generates an Excel file for the bot operator
-Python aiogram`,
+      title: `The bot collects water meter readings in Terebovlia sity and creates an Excel file for the bot operator.`,
     },
   
   ]};

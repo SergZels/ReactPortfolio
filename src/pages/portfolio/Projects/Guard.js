@@ -80,20 +80,20 @@ export default function Guard(){
 }
 
   const projest = {
-    'name':'Guard',
+    'name':'Guard Bot',
     'title':``,
     'photo':[
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/Guard/5.png',
-      title: ``,
+      title: `Скрипт встановлює зєднання із IP камерою по протоколу rtsp та за допомогою невеликої нейромережі здійснює пошук силуєту людини`,
     },
     {
         img: 'https://zelse.asuscomm.com/PortfolioStatic/Guard/3.png',
-        title: ``,
+        title: `Якщо виявлено людину - фото відсилається на Telegram бот.`,
       },
       {
         img: 'https://zelse.asuscomm.com/PortfolioStatic/Guard/4.png',
-        title: ``,
+        title: `Також скрипт намагається розпізнати колір одягу.`,
       },
       {
         img: 'https://zelse.asuscomm.com/PortfolioStatic/Guard/2.png',
