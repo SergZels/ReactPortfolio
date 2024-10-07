@@ -84,9 +84,21 @@ export default function CzechBeads(){
     'title':``,
     'photo':[
     {
-      img: 'https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/d33326cd-cf9b-4a79-9ed4-49189eb01af7',
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/CzechBeads/4.png',
       title: `The bot returns an image of Czech beads based on its code.
-The programming language is Python. Adminka - React`,
+The programming language is Python.`,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/CzechBeads/1.png',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/CzechBeads/2.png',
+      title: ` Adminka - React`,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/CzechBeads/3.png',
+      title: ``,
     },
   
   ]};

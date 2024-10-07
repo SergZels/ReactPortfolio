@@ -29,18 +29,7 @@ export default function Atele(){
           </Col>
        
       
-         
-          <Col lg="1">
-          <a href="https://github.com/SergZels/OrxidStatBot2" target="_blank" rel="noopener noreferrer">
-              <FaGithub size={40} />
-            </a>
-          </Col>
-      
-          <Col lg="1">
-          <a href="https://www.youtube.com/shorts/1qPdNgIkRyk" target="_blank" rel="noopener noreferrer">
-              <FaYoutube size={40} />
-            </a>
-          </Col>
+       
 
         </Row>
         {projest['photo'].map((item) => (
@@ -78,7 +67,31 @@ export default function Atele(){
     'title':``,
     'photo':[
     {
-      img: '',
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Atele/2.png',
+      title: `Desktop програма яка вірно служить у нашому сімейному бізнесі із 2013 року. `,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Atele/3.png',
+      title: `Atele - розроблено на MSAccess`,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Atele/4.png',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Atele/5.png',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Atele/6.png',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Atele/7.png',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Atele/8.png',
       title: ``,
     },
   

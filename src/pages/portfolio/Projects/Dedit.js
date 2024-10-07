@@ -28,19 +28,20 @@ export default function Dedit(){
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
        
-      
+        
+          <Col lg="1">
+          <a href="https://t.me/dedit_edit_bot" target="_blank" rel="noopener noreferrer">
+              <FaTelegramPlane size={40} />
+            </a>
+          </Col>
          
           <Col lg="1">
-          <a href="https://github.com/SergZels/OrxidStatBot2" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/SergZels/dEditTelegramBot" target="_blank" rel="noopener noreferrer">
               <FaGithub size={40} />
             </a>
           </Col>
       
-          <Col lg="1">
-          <a href="https://www.youtube.com/shorts/1qPdNgIkRyk" target="_blank" rel="noopener noreferrer">
-              <FaYoutube size={40} />
-            </a>
-          </Col>
+       
 
         </Row>
         {projest['photo'].map((item) => (
@@ -78,9 +79,29 @@ export default function Dedit(){
     'title':``,
     'photo':[
     {
-      img: 'https://zelse.asuscomm.com/PortfolioStatic/WaterBot/1.png',
-      title: `The bot collects water meter readings and generates an Excel file for the bot operator
-Python aiogram`,
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/dEditBot/2.png',
+      title: `Бот для продажу навчальних курсів`,
     },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/dEditBot/3.png',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/dEditBot/4.png',
+      title: `Уроки відкриваються у мінібраузері telegram`,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/dEditBot/5.png',
+      title: `Адмінка - bootstrap`,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/dEditBot/6.png',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/dEditBot/7.png',
+      title: ``,
+    },
+
   
   ]};

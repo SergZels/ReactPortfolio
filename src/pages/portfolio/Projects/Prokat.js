@@ -9,6 +9,7 @@ import {
   FaInternetExplorer
 } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa"; 
+import Typewriter from "typewriter-effect";
 import './Project.css';
 
 export default function Prokat(){
@@ -24,24 +25,24 @@ export default function Prokat(){
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3 align-items-center">
           <Col lg="8">
-            <h5 className="display-4 mb-4">{projest['name']}</h5>
+            <h5 className="display-4 mb-4">
+             
+              <Typewriter
+                    options={{
+                      strings: [
+                        projest['name'],
+                        "VBA",
+                        projest['name'],
+                      ],
+                      autoStart: true,
+                      loop: true,
+                      deleteSpeed: 10,
+                    }}
+                  />
+              </h5>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
-       
-      
-         
-          <Col lg="1">
-          <a href="https://github.com/SergZels/OrxidStatBot2" target="_blank" rel="noopener noreferrer">
-              <FaGithub size={40} />
-            </a>
-          </Col>
-      
-          <Col lg="1">
-          <a href="https://www.youtube.com/shorts/1qPdNgIkRyk" target="_blank" rel="noopener noreferrer">
-              <FaYoutube size={40} />
-            </a>
-          </Col>
-
+  
         </Row>
         {projest['photo'].map((item) => (
         <Row className="sec_sp">
@@ -78,8 +79,73 @@ export default function Prokat(){
     'title':``,
     'photo':[
     {
-      img: '',
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/2.png',
+      title: `Мій перший комерційний проект для сімейного бізнесу.`,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/3.png',
+      title: `CRM система для прокату дитячих карнавальних костюмів`,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/4.png',
       title: ``,
     },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/5.png',
+      title: `Адмінка`,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/6.png',
+      title: `Статистика`,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/7.png',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/8.png',
+      title: `Квитанція`,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/9.png',
+      title: `Багато різних алгоритмів пошуку та обробки замовлень`,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/10.png',
+      title: `Кастомна СУБД`,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/11.png',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/12.png',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/13.png',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/14.png',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/15.png',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/16.png',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/17.png',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/18.png',
+      title: ``,
+    },
+   
   
   ]};

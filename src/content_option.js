@@ -152,7 +152,7 @@ const dataportfolio = [ {
 
 },
 {
-    img: "https://zelse.asuscomm.com/PortfolioStatic/Bybit/1.jpg",
+    img: "https://zelse.asuscomm.com/PortfolioStatic/Bybit/2.jpg",
     description: "Bybit copy Trading (GOlang)",
     link: "/ByBit",
 },
@@ -194,7 +194,7 @@ const dataportfolio = [ {
    
     {
         img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/a003ede0-8e96-4c43-9b31-cda8a1663d45",
-        description: "Smart Bot for my family biznes (Viber) ",
+        description: "Smart Bot for my family biznes (PHP) ",
         link: "/OrxidBot",
     },
    
@@ -219,7 +219,7 @@ const dataportfolio = [ {
         link: "/BeadsParser",
     },
     {
-        img: "https://zelse.asuscomm.com/PortfolioStatic/Gingr/1.jpg",
+        img: "https://zelse.asuscomm.com/PortfolioStatic/Gingr/2.jpg",
         description: "Data Analist project",
         link: "/Gingr",
     },
@@ -229,7 +229,7 @@ const dataportfolio = [ {
         link: "/CzechBeads",
     },
     {
-        img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/6a9bde64-f1d8-40eb-899c-1564275b18ef",
+        img: "https://zelse.asuscomm.com/PortfolioStatic/eSim/logo.jpg",
         description: `Shop for sale eSim (Make.com)`,
         link: "/Make",
     },
