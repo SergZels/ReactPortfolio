@@ -32,11 +32,7 @@ export default function Gingr(){
               <FaGithub size={40} />
             </a>
           </Col>
-          <Col lg="1">
-          <a href="https://www.youtube.com/shorts/NJ27k09QAR8" target="_blank" rel="noopener noreferrer">
-              <FaYoutube size={40} />
-            </a>
-          </Col>
+       
 
         </Row>
         {projest['photo'].map((item) => (
@@ -86,6 +82,35 @@ export default function Gingr(){
         img: 'https://zelse.asuscomm.com/PortfolioStatic/Gingr/4.png',
         title: ``,
       },
+      {
+        img: 'https://zelse.asuscomm.com/PortfolioStatic/Gingr/5.png',
+        title: ``,
+      },
+      {
+        img: 'https://zelse.asuscomm.com/PortfolioStatic/Gingr/6.png',
+        title: ``,
+      },
+      {
+        img: 'https://zelse.asuscomm.com/PortfolioStatic/Gingr/7.png',
+        title: ``,
+      },
+      {
+        img: 'https://zelse.asuscomm.com/PortfolioStatic/Gingr/8.png',
+        title: ``,
+      },
+      {
+        img: 'https://zelse.asuscomm.com/PortfolioStatic/Gingr/9.png',
+        title: ``,
+      },
+      {
+        img: 'https://zelse.asuscomm.com/PortfolioStatic/Gingr/10.png',
+        title: ``,
+      },
+      {
+        img: 'https://zelse.asuscomm.com/PortfolioStatic/Gingr/11.png',
+        title: ``,
+      },
+    
     
   
   ]};

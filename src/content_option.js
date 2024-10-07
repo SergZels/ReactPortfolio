@@ -225,7 +225,7 @@ const dataportfolio = [ {
     },
     {
         img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/3149f402-155f-4f53-a4bb-7c26d562dafd",
-        description: "Pet project",
+        description: "Pet project Stask: Python",
         link: "/CzechBeads",
     },
     {

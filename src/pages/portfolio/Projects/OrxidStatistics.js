@@ -26,18 +26,13 @@ export default function OrxidStatistics(){
             <h5 className="display-4 mb-4">{projest['name']}</h5>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
-         
-      
+              
           <Col lg="1">
           <a href="https://github.com/SergZels/OrxidStatistics" target="_blank" rel="noopener noreferrer">
               <FaGithub size={40} />
             </a>
           </Col>
-          <Col lg="1">
-          <a href="https://www.youtube.com/shorts/HecgA7FqErE" target="_blank" rel="noopener noreferrer">
-              <FaYoutube size={40} />
-            </a>
-          </Col>
+        
 
         </Row>
         {projest['photo'].map((item) => (

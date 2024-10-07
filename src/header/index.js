@@ -22,8 +22,9 @@ const Headermain = () => {
           </Link>
           
           <div className="d-flex align-items-center">
-          <a href="https://orxid.in.ua">UA</a>
+         
           <Themetoggle />
+          <a className="nav_ac" href="https://orxid.in.ua">UA</a>
           <button className="menu__button  nav_ac" onClick={handleToggle}>
             {!isActive ? <VscClose /> : <VscGrabber />}
           </button>

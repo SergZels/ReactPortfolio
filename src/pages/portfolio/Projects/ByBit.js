@@ -5,6 +5,8 @@ import {
   FaGithub,
   FaYoutube,
   FaInstagram,
+  FaCubes,
+  FaPython,
   FaInternetExplorer
 } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa"; 
@@ -21,7 +23,7 @@ export default function ByBit(){
           <title> {projest['name']}</title>
           {/* <meta name="description" content={meta.description} /> */}
         </Helmet>
-        <Row className="mb-5 mt-3 pt-md-3 align-items-center">
+        <Row className=" mt-3 pt-md-3 align-items-center">
           <Col lg="8">
             <h5 className="display-4 mb-4">{projest['name']}</h5>
             <hr className="t_border my-4 ml-0 text-left" />
@@ -29,17 +31,16 @@ export default function ByBit(){
        
       
           <Col lg="1">
-          <a href="https://t.me/TerebovlaVodokanal_bot" target="_blank" rel="noopener noreferrer">
-              <FaTelegramPlane size={40} />
+          <a href="https://github.com/SergZels/BybitCopyTradingGO" target="_blank" rel="noopener noreferrer">
+              <FaGithub size={40} />
             </a>
           </Col>
       
-          <Col lg="1">
-          <a href="https://www.youtube.com/shorts/oUcjWH9b4RE" target="_blank" rel="noopener noreferrer">
-              <FaYoutube size={40} />
-            </a>
-          </Col>
-
+    
+        </Row>
+        <Row className="mb-5 mt-3 pt-md-3 align-items-center">
+        <Col lg="1"><FaCubes /> <strong>Stack</strong></Col> <Col lg="2"><FaPython /> Python</Col>
+        <hr className="t_border my-4 ml-0 text-left" />
         </Row>
         {projest['photo'].map((item) => (
         <Row className="sec_sp">
@@ -73,7 +74,7 @@ export default function ByBit(){
 
   const projest = {
     'name':'ByBit',
-    'title':``,
+    'title':`Python`,
     'photo':[
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/Bybit/2.png',
