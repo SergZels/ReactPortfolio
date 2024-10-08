@@ -80,8 +80,44 @@ export default function OrxidBotViber(){
     'title':``,
     'photo':[
     {
-      img: 'https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/a003ede0-8e96-4c43-9b31-cda8a1663d45',
-      title: ` Viber Bot - a virtual employee of Orchid atelier, which provides answers to clients' questions about services, prices, contacts, and much more. This bot works together with an operator.`,
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/OrxidViber/2.jpg',
+      title: ` Viber Bot - a virtual employee of Orchid atelier, which provides answers to clients' questions about services, prices, contacts, and much more. This bot works together with an operator. The work of the bot can be seen in the Youtube video. Link from above ☝️`,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/OrxidViber/0.jpg',
+      title: `This is a large project written in PHP in which elements of AI`,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/OrxidViber/3.jpg',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/OrxidViber/4.jpg',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/OrxidViber/5.jpg',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/OrxidViber/6.jpg',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/OrxidViber/7.jpg',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/OrxidViber/8.jpg',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/OrxidViber/9.jpg',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/OrxidViber/1.jpg',
+      title: ``,
     },
   
   ]};

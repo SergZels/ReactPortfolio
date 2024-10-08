@@ -86,7 +86,7 @@ export default function ByBit(){
     },
     {
         img: 'https://zelse.asuscomm.com/PortfolioStatic/Bybit/3.png',
-        title: `Vanilla js frontend (more than 1000 lines of code), Boorstrap`,
+        title: `Vanilla js frontend (more than 1000 lines js code), Boorstrap`,
       },
 
   

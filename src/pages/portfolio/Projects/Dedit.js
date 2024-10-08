@@ -80,23 +80,27 @@ export default function Dedit(){
     'photo':[
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/dEditBot/2.png',
-      title: `Бот для продажу навчальних курсів`,
+      title: `A bot for selling graphic design courses`,
     },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/dEditBot/3.png',
-      title: ``,
+      title: `My first high-load bot on Aiogram 3 + FastAPI`,
     },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/dEditBot/4.png',
-      title: `Уроки відкриваються у мінібраузері telegram`,
+      title: `Lessons open in the telegram mini-browser`,
     },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/dEditBot/5.png',
-      title: `Адмінка - bootstrap`,
+      title: `Admin panel - server-side rendering (HTML, CSS, bootstrap, Jinja2)`,
     },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/dEditBot/6.png',
       title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/dEditBot/9.png',
+      title: `Implemented automatic payment by liqpay`,
     },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/dEditBot/7.png',

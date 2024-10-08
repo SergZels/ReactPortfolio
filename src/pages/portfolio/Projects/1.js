@@ -117,5 +117,13 @@ Frontend is the bot itself using aiogram`,
       img: 'https://zelse.asuscomm.com/PortfolioStatic/TerInfoBot/8.png',
       title: ``,
     },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/TerInfoBot/11.png',
+      title: ``,
+    },
+    {
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/TerInfoBot/12.png',
+      title: ``,
+    },
   
   ]};
