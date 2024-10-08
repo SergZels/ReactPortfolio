@@ -27,6 +27,8 @@ import  Atele from "../pages/portfolio/Projects/Atele";
 import  Dedit from "../pages/portfolio/Projects/Dedit";
 import  Make from "../pages/portfolio/Projects/Make";
 import  Poland from "../pages/portfolio/Projects/Poland";
+import  OtherPr from "../pages/portfolio/Projects/OtherPr";
+import  MobDev from "../pages/portfolio/Projects/MobDev";
 
 const AnimatedRoutes = withRouter(({ location }) => (
   <TransitionGroup>
@@ -64,6 +66,8 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/Dedit" element={<Dedit  />} />
         <Route path="/Make" element={<Make  />} />
         <Route path="/Poland" element={<Poland  />} />
+        <Route path="/Other" element={<OtherPr />} /> 
+        <Route path="/MobDev" element={<MobDev />} /> 
         <Route path="*" element={<Home />} />
       </Routes>
     </CSSTransition>

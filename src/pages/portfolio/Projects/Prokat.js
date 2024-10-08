@@ -80,11 +80,11 @@ export default function Prokat(){
     'photo':[
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/2.png',
-      title: `Мій перший комерційний проект для сімейного бізнесу.`,
+      title: `My first commercial project for a family business.`,
     },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/3.png',
-      title: `CRM система для прокату дитячих карнавальних костюмів`,
+      title: `CRM system for renting children's carnival costumes`,
     },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/4.png',
@@ -92,11 +92,11 @@ export default function Prokat(){
     },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/5.png',
-      title: `Адмінка`,
+      title: `Admin panel`,
     },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/6.png',
-      title: `Статистика`,
+      title: `Statistics`,
     },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/7.png',
@@ -104,15 +104,15 @@ export default function Prokat(){
     },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/8.png',
-      title: `Квитанція`,
+      title: `Label.`,
     },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/9.png',
-      title: `Багато різних алгоритмів пошуку та обробки замовлень`,
+      title: `Many different algorithms for searching and processing orders`,
     },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/10.png',
-      title: `Кастомна СУБД`,
+      title: `Custom database system`,
     },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/Prokat/11.png',

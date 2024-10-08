@@ -146,7 +146,7 @@ const services = [{
 ];
 
 const dataportfolio = [ {
-    img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/5f026fe2-5af0-47cc-8636-d747bda3189b",
+    img: "https://zelse.asuscomm.com/PortfolioStatic/RR/0.jpg",
     description: "Large custom CRM for a phone repair shop",
     link: "/RR",
 
@@ -158,7 +158,7 @@ const dataportfolio = [ {
 },
     {
         img: "https://zelse.asuscomm.com/portfolio/img/port1.jpg",
-        description: `Telegram bot`,
+        description: `Information portal. My gift for my city.`,
         link: "/Project1",
 
     },
@@ -167,12 +167,12 @@ const dataportfolio = [ {
  
     {
         img: "https://zelse.asuscomm.com/PortfolioStatic/dEditBot/1.png",
-        description: "dEdit bot",
+        description: "Bot for selling training courses",
         link: "/Dedit",
     },
     {
         img: "https://zelse.asuscomm.com/portfolio/img/port2.jpg",
-        description: `Water meter Bot`,
+        description: `Water meter Bot. My gift for my city.`,
         link: "/WaterBot",
     },
    
@@ -182,13 +182,18 @@ const dataportfolio = [ {
         link: "/FamilyExpenses",
     },
     {
+        img: "https://www.simplilearn.com/ice9/free_resources_article_thumb/How_to_Become_an_Android_Developer.jpg",
+        description: `Mobile development`,
+        link: "/MobDev",
+    },
+    {
         img: "https://zelse.asuscomm.com/PortfolioStatic/Prokat/1.jpg",
-        description: "Стара кастомна CRM в Exel для с",
+        description: "Old custom CRM for my family biznes in Exel",
         link: "/Prokat",
     },
     {
         img: "https://zelse.asuscomm.com/PortfolioStatic/Atele/1.jpg",
-        description: "Old custom CRM for my family biznes",
+        description: "Old custom CRM for my family biznes on MS Access",
         link: "/Atele",
     },
    
@@ -240,7 +245,7 @@ const dataportfolio = [ {
     },
     {
         img: "https://zelse.asuscomm.com/PortfolioStatic/Museum/fon.jpg",
-        description: `Desktop Assecc project`,
+        description: `Software for the museum`,
         link: "/Museum",
     },
     {
@@ -256,7 +261,14 @@ const dataportfolio = [ {
         description: `Guard bot`,
         link: "/Guard",
     },
- 
+    
+
+
+   {
+        img: "https://media.geeksforgeeks.org/wp-content/uploads/20201123152927/PythonProjects11.png",
+        description: `Other`,
+        link: "/Other",
+    },
  
 ];
 

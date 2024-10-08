@@ -107,7 +107,7 @@ Frontend is the bot itself using aiogram`,
     },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/TerInfoBot/6.png',
-      title: ``,
+      title: `Later, a small search site was also implemented`,
     },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/TerInfoBot/7.png',

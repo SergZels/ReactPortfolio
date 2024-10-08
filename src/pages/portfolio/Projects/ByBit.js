@@ -38,10 +38,10 @@ export default function ByBit(){
       
     
         </Row>
-        <Row className="mb-5 mt-3 pt-md-3 align-items-center">
+        {/* <Row className="mb-5 mt-3 pt-md-3 align-items-center">
         <Col lg="1"><FaCubes /> <strong>Stack</strong></Col> <Col lg="2"><FaPython /> Python</Col>
         <hr className="t_border my-4 ml-0 text-left" />
-        </Row>
+        </Row> */}
         {projest['photo'].map((item) => (
         <Row className="sec_sp">
            <Col lg="5">
@@ -76,13 +76,18 @@ export default function ByBit(){
     'name':'ByBit',
     'title':`Python`,
     'photo':[
+      {
+        img: 'https://zelse.asuscomm.com/PortfolioStatic/Bybit/4.png',
+        title: `My first project on GO. The project provides copy trade for traders on the ByBit exchange`,
+      },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/Bybit/2.png',
       title: ``,
     },
     {
         img: 'https://zelse.asuscomm.com/PortfolioStatic/Bybit/3.png',
-        title: ``,
+        title: `Vanilla js frontend (more than 1000 lines of code), Boorstrap`,
       },
+
   
   ]};

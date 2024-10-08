@@ -68,11 +68,11 @@ export default function Atele(){
     'photo':[
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/Atele/2.png',
-      title: `Desktop програма яка вірно служить у нашому сімейному бізнесі із 2013 року. `,
+      title: `Desktop CRM that has been faithfully serving our family business since 2013. `,
     },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/Atele/3.png',
-      title: `Atele - розроблено на MSAccess`,
+      title: `Atele - developed on MS Access`,
     },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/Atele/4.png',
