@@ -100,7 +100,7 @@ export default function Dedit(){
     },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/dEditBot/9.png',
-      title: `Implemented automatic payment by liqpay`,
+      title: `Implemented automatic payment by liqpay. The bot also has a referral program`,
     },
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/dEditBot/7.png',

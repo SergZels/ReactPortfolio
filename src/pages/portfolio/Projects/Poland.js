@@ -79,7 +79,7 @@ export default function Poland(){
     'photo':[
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/Poland/1.jpg',
-      title: `Невеличкий проект який взаємодіє із нейромережею Midjourney та допомагає обрати одне із чотирох згенерованих фото.`,
+      title: `A small project that interacts with the Midjourney neural network and helps to choose one of the four generated photos.`,
     },
   
   ]};

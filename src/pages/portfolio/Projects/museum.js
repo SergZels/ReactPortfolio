@@ -76,12 +76,12 @@ export default function Museum(){
     'photo':[
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/Museum/3.png',
-      title: ``,
+      title: `Database of museum exhibits`,
     },
     {
         img: 'https://zelse.asuscomm.com/PortfolioStatic/Museum/4.png',
-        title: ``,
-      },
+        title: `Software developed in MS Access `,
+      },                                                                                                                                                                                                                                                                                                 
       {
         img: 'https://zelse.asuscomm.com/PortfolioStatic/Museum/5.png',
         title: ``,

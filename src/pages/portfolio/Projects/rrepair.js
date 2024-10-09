@@ -76,13 +76,14 @@ Frontend is the bot itself using aiogram`,
       title: `This is a large project that I have been developing for several months. The project is developed on Django, PostgreSQL database.`,
     },
     {
-      img: 'https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/c643d14c-8d54-43dc-ae04-a424e5035fc2',
-      title: `The customer has the opportunity to:
-      - Keep records of orders,
-      - Print labels and invoices
-      - Work with a spare parts warehouse
-      - Keep track of the salaries of craftsmen
-       and more`,
+      img: 'https://zelse.asuscomm.com/PortfolioStatic/RR/2.png',
+      title: `The client has the opportunity to
+- Keep records of orders,
+- Print labels and invoices
+- Work with a spare parts warehouse
+- Keep track of the salaries of the masters
+- Maintain correspondence with customers
+- and much more`,
     },
     {
       img: 'https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/648df716-b9ab-483c-becd-a9d68dec4e76',

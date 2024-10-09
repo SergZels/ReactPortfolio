@@ -79,11 +79,11 @@ export default function Make(){
     'photo':[
     {
       img: 'https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/6a9bde64-f1d8-40eb-899c-1564275b18ef',
-      title: `Інтернет магазин для автоматизованого продажу eSim із бекендом на Make.com. На фото частина Make коду`,
+      title: `An online store for automated eSim sales with a Make.com backend. Here is a part of the Make code`,
     },
     {
         img: 'https://zelse.asuscomm.com/PortfolioStatic/eSim/1.png',
-        title: `Клієнт здійснює покупки eSim на сайті зробленому на WIX. Та отримує qr активації на email/ `,
+        title: `The customer makes purchases of eSim on the site made on WIX. And receives an activation code to email. `,
       },
    
   ]};

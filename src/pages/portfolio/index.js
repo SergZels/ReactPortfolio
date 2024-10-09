@@ -3,9 +3,21 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
-import { Link } from 'react-router-dom';
+import { Link,useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export const Portfolio = () => {
+
+    const location = useLocation();
+  
+    useEffect(() => {
+      window.gtag('config', 'G-N0SPMBLLE9', {
+        page_path: location.pathname,
+      });
+    }, [location]);
+  
+ 
+
   return (
     <HelmetProvider>
       <Container className="About-header">

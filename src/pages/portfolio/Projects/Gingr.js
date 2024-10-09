@@ -66,21 +66,22 @@ export default function Gingr(){
 }
 
   const projest = {
-    'name':'Gin',
+    'name':'Data analysis project',
     'title':``,
     'photo':[
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/Gingr/2.png',
-      title: ``,
+      title: `By extracting data from API and CSV reports, my python scripts process it and write it to sheets. Then, with the help of Looker Studio, I create charts to analyze the customer's business.
+`,
     },
     {
         img: 'https://zelse.asuscomm.com/PortfolioStatic/Gingr/3.png',
-        title: ``,
+        title: `Frontend - React `,
       },
   
       {
         img: 'https://zelse.asuscomm.com/PortfolioStatic/Gingr/4.png',
-        title: ``,
+        title: `Backend - FastAPI`,
       },
       {
         img: 'https://zelse.asuscomm.com/PortfolioStatic/Gingr/5.png',

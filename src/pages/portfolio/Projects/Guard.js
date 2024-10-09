@@ -85,15 +85,15 @@ export default function Guard(){
     'photo':[
     {
       img: 'https://zelse.asuscomm.com/PortfolioStatic/Guard/5.png',
-      title: `Скрипт встановлює зєднання із IP камерою по протоколу rtsp та за допомогою невеликої нейромережі здійснює пошук силуєту людини`,
+      title: `The script connects to the IP camera via rtsp protocol and uses a small neural network to search for a human silhouette`,
     },
     {
         img: 'https://zelse.asuscomm.com/PortfolioStatic/Guard/3.png',
-        title: `Якщо виявлено людину - фото відсилається на Telegram бот.`,
+        title: `If a person is detected, the photo is sent to the Telegram bot.`,
       },
       {
         img: 'https://zelse.asuscomm.com/PortfolioStatic/Guard/4.png',
-        title: `Також скрипт намагається розпізнати колір одягу.`,
+        title: `The script also tries to recognize the color of clothes.`,
       },
       {
         img: 'https://zelse.asuscomm.com/PortfolioStatic/Guard/2.png',
