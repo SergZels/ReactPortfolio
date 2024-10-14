@@ -75,7 +75,7 @@ export default function OrxidStatistics(){
     },
     {
         img: 'https://zelse.asuscomm.com/PortfolioStatic/BiznesStatistic/3.png',
-        title: `Accounting software for my family biznes. Backend  FastAPI`,
+        title: ``,
       },
   
   ]};
