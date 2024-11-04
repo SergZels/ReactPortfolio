@@ -22,6 +22,7 @@ export const Home = () => {
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
               <div className="intro mx-auto">
+              <div className="infr">
                 <h2 className="mb-1x">{introdata.title}</h2>
                 <h1 className="fluidz-48 mb-1x">
                   <Typewriter
@@ -37,7 +38,11 @@ export const Home = () => {
                     }}
                   />
                 </h1>
-                <p className="mb-1x">{introdata.description}</p>
+                {/* <p className="mb-1x">{introdata.description}</p> */}
+                
+                <p><strong>Indie Developer periodically from 2012</strong></p>
+                <p><strong>Freelancer since 2023</strong></p>
+                </div>
                 <div className="intro_btn-action pb-5">
                   <Link to="/portfolio" className="text_2">
                     <div id="button_p" className="ac_btn btn ">
@@ -63,7 +68,20 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
+                 
+                   
+                
                 </div>
+
+                <div className="CV_Cont">
+                 <a href="https://zelse.asuscomm.com/PortfolioReact/SergiyZelinskii.pdf" download className="ac_btn btn ac_CV">
+                  Download CV
+                  <div className="ring one"></div>
+                  <div className="ring two"></div>
+                  <div className="ring three"></div>
+                 </a>
+              </div>
+
               </div>
             </div>
           </div>

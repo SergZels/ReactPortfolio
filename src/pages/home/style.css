@@ -106,8 +106,31 @@ section {
     overflow: hidden;
     transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
     cursor: pointer;
-    border-radius: 0;
+    border-radius: 1;
     margin-right: 20px;
+  
+
+ 
+   
+    /* width: 100%; Кнопки займають всю ширину в межах своєї половини */
+ 
+
+
+
+}
+
+.CV_Cont{
+    justify-content: center;
+    text-align: center;
+}
+.infr{
+    text-align: center;
+}
+.ac_CV{
+    width: 60%;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box; /* Щоб padding не впливав на ширину */
 }
 
 .ac_btn a {
@@ -232,6 +255,10 @@ section {
 .intro_sec .h_bg-image {
     filter: saturate(1);
 }
+.intro_btn-action {
+    margin-top: 30px;
+}
+
 
 @media (max-width: 768px) {
     .intro_btn-action {

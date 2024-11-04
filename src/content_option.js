@@ -11,7 +11,7 @@ const introdata = {
         second: "I code cool bots",
         third: "I develop CRM",
     },
-    description: "Indie developer from 2012 | Freelanser from 2023",
+    description: "Indie Developer (periodically from 2012) | Freelancer (since 2023)",
     your_img_url: "https://zelse.asuscomm.com/portfolio/img/hero.jpg",
 };
 
