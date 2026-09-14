@@ -91,6 +91,7 @@ Now I am focused on developing bots in Python using the asynchronous aiogram fra
   ] satisfies StackEntry[],
   contacts: {
     email: 'sergzels@gmail.com',
+    telegram: 'https://t.me/SZelinsky',
     github: 'https://github.com/SergZels',
     linkedin: 'https://www.linkedin.com/in/sergzel/',
     youtube: 'https://www.youtube.com/channel/UCLmbaTBBpZ5ECVvjOmde7Fg',

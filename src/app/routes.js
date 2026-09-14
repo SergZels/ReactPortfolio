@@ -29,6 +29,8 @@ import  Make from "../pages/portfolio/Projects/Make";
 import  Poland from "../pages/portfolio/Projects/Poland";
 import  OtherPr from "../pages/portfolio/Projects/OtherPr";
 import  MobDev from "../pages/portfolio/Projects/MobDev";
+import HRBot from "../pages/portfolio/Projects/HRbot";
+import CodeRevAI from "../pages/portfolio/Projects/CodeReviewAI";
 
 const AnimatedRoutes = withRouter(({ location }) => (
   <TransitionGroup>
@@ -68,6 +70,8 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/Poland" element={<Poland  />} />
         <Route path="/Other" element={<OtherPr />} /> 
         <Route path="/MobDev" element={<MobDev />} /> 
+        <Route path="/HRBot" element={<HRBot />} /> 
+        <Route path="/CodeRevAI" element={<CodeRevAI />} /> 
         <Route path="*" element={<Home />} />
       </Routes>
     </CSSTransition>

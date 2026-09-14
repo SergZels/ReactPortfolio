@@ -19,7 +19,9 @@ export const UI = {
   levelFamiliar: { uk: 'знайомий', en: 'familiar' },
   casesTitle: { uk: 'Кейси', en: 'Cases' },
   casesAll: { uk: 'Усі', en: 'All' },
-  casesRest: { uk: 'Решта проєктів', en: 'Other projects' },
+  // «Other projects» тут не можна: так називається один із проєктів,
+  // і заголовок секції збігався б із карткою всередині неї.
+  casesRest: { uk: 'Решта проєктів', en: 'More projects' },
   casesEmpty: {
     uk: 'Немає проєктів із цією технологією',
     en: 'No projects use this technology',
@@ -29,6 +31,7 @@ export const UI = {
   statusArchived: { uk: 'в архіві', en: 'archived' },
   statusPet: { uk: 'пет-проєкт', en: 'pet project' },
   backToCases: { uk: 'Назад до кейсів', en: 'Back to cases' },
+  shotAlt: { uk: 'знімок екрана', en: 'screenshot' },
   notFoundTitle: { uk: 'Сторінку не знайдено', en: 'Page not found' },
   notFoundHome: { uk: 'На головну', en: 'Go home' },
   linkGithub: { uk: 'Код на GitHub', en: 'Code on GitHub' },

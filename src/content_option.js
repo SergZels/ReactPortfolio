@@ -171,6 +171,11 @@ const dataportfolio = [ {
         link: "/Dedit",
     },
     {
+        img: "https://zelse.asuscomm.com/PortfolioStatic/HRBot/4.png",
+        description: `HR Bot`,
+        link: "/HRBot",
+       },
+    {
         img: "https://zelse.asuscomm.com/portfolio/img/port2.jpg",
         description: `Water meter Bot. My gift for my city.`,
         link: "/WaterBot",
@@ -186,6 +191,12 @@ const dataportfolio = [ {
         description: `Mobile development`,
         link: "/MobDev",
     },
+ 
+       {
+        img: "https://zelse.asuscomm.com/PortfolioStatic/CodeReviewAI/maxresdefault.jpg",
+        description: `Code Review AI`,
+        link: "/CodeRevAI",
+       },
     {
         img: "https://zelse.asuscomm.com/PortfolioStatic/Prokat/1.jpg",
         description: "Old custom CRM for my family biznes in Exel",
@@ -229,7 +240,7 @@ const dataportfolio = [ {
         link: "/Gingr",
     },
     {
-        img: "https://www.upwork.com/att/download/portfolio/persons/uid/1662865922213687296/profile/projects/files/3149f402-155f-4f53-a4bb-7c26d562dafd",
+        img: "https://zelse.asuscomm.com/portfolio/img/port5.jpg",
         description: "Pet project Stask: Python",
         link: "/CzechBeads",
     },
@@ -269,6 +280,9 @@ const dataportfolio = [ {
         description: `Other`,
         link: "/Other",
     },
+    
+ 
+
  
 ];
 
