@@ -1,0 +1,263 @@
+{
+  "rrepair-crm": {
+    "folder": "RR",
+    "cover": "0.jpg",
+    "shots": [
+      "2.jpg",
+      "17.png",
+      "3.jpg",
+      "12.jpg",
+      "10.jpg",
+      "4.jpg",
+      "8.jpg",
+      "11.jpg",
+      "7.jpg",
+      "15.png",
+      "13.jpg",
+      "16.png"
+    ]
+  },
+  "dedit": {
+    "folder": "dEditBot",
+    "cover": "1.png",
+    "shots": [
+      "2.png",
+      "3.png",
+      "4.png",
+      "5.png",
+      "6.png",
+      "9.png",
+      "7.png"
+    ]
+  },
+  "bybit-copy-trading": {
+    "folder": "Bybit",
+    "cover": "2.jpg",
+    "shots": [
+      "4.png",
+      "2.png",
+      "3.png"
+    ]
+  },
+  "terinfobot": {
+    "folder": "TerInfoBot",
+    "cover": "cover.jpg",
+    "shots": [
+      "1.png",
+      "3.png",
+      "4.png",
+      "5.png",
+      "6.png",
+      "7.png",
+      "8.png",
+      "11.png",
+      "12.png"
+    ]
+  },
+  "hr-bot": {
+    "folder": "HRBot",
+    "cover": "4.png",
+    "shots": [
+      "1.png",
+      "2.png",
+      "3.png"
+    ]
+  },
+  "code-review-ai": {
+    "folder": "CodeReviewAI",
+    "cover": "maxresdefault.jpg",
+    "shots": [
+      "1.png"
+    ]
+  },
+  "water-bot": {
+    "folder": "WaterBot",
+    "cover": "cover.jpg",
+    "shots": [
+      "1.png"
+    ]
+  },
+  "family-expenses": {
+    "folder": "FamilyExpenses",
+    "cover": "1.jpg",
+    "shots": [
+      "1.jpg"
+    ]
+  },
+  "mobile-dev": {
+    "folder": "Mobile",
+    "cover": "1.png",
+    "shots": [
+      "1.png",
+      "2.png"
+    ]
+  },
+  "prokat": {
+    "folder": "Prokat",
+    "cover": "1.jpg",
+    "shots": [
+      "2.png",
+      "3.png",
+      "4.png",
+      "5.png",
+      "6.png",
+      "7.png",
+      "8.png",
+      "9.png",
+      "10.png",
+      "11.png",
+      "12.png",
+      "13.png",
+      "14.png",
+      "15.png",
+      "16.png",
+      "17.png",
+      "18.png"
+    ]
+  },
+  "atele": {
+    "folder": "Atele",
+    "cover": "1.jpg",
+    "shots": [
+      "2.png",
+      "3.png",
+      "4.png",
+      "5.png",
+      "6.png",
+      "7.png",
+      "8.png",
+      "9.png"
+    ]
+  },
+  "orxid-viber-bot": {
+    "folder": "OrxidViber",
+    "cover": "0.jpg",
+    "shots": [
+      "2.jpg",
+      "1.png",
+      "3.jpg",
+      "4.jpg",
+      "5.jpg",
+      "6.jpg",
+      "7.jpg",
+      "8.jpg",
+      "9.jpg"
+    ]
+  },
+  "biznes-statistics-bot": {
+    "folder": "BiznesStatisticBot",
+    "cover": "1.jpg",
+    "shots": [
+      "1.jpg"
+    ]
+  },
+  "orxid-accounting": {
+    "folder": "BiznesStatistic",
+    "cover": "1.jpg",
+    "shots": [
+      "2.png",
+      "3.png"
+    ]
+  },
+  "orxid-site": {
+    "folder": "StaticSite",
+    "cover": "2.png",
+    "shots": [
+      "1.png",
+      "2.png",
+      "3.png"
+    ]
+  },
+  "beads-parser": {
+    "folder": "BeadsParser",
+    "cover": "1.jpg",
+    "shots": [
+      "2.png",
+      "3.png"
+    ]
+  },
+  "gingr-analytics": {
+    "folder": "Gingr",
+    "cover": "2.jpg",
+    "shots": [
+      "2.png",
+      "3.png",
+      "4.png",
+      "5.png",
+      "6.png",
+      "7.png",
+      "8.png",
+      "9.png",
+      "10.png",
+      "11.png"
+    ]
+  },
+  "czech-beads-bot": {
+    "folder": "CzechBeads",
+    "cover": "cover.jpg",
+    "shots": [
+      "1.png",
+      "2.png",
+      "3.png",
+      "4.png"
+    ]
+  },
+  "esim-shop": {
+    "folder": "eSim",
+    "cover": "logo.jpg",
+    "shots": [
+      "1.png",
+      "2.png"
+    ]
+  },
+  "poland-flask": {
+    "folder": "Poland",
+    "cover": "1.jpg",
+    "shots": [
+      "1.jpg"
+    ]
+  },
+  "museum": {
+    "folder": "Museum",
+    "cover": "fon.jpg",
+    "shots": [
+      "1.png",
+      "2.png",
+      "3.png",
+      "4.png",
+      "5.png",
+      "6.png",
+      "7.png"
+    ]
+  },
+  "bot-portfolio": {
+    "folder": "OldPortfolio",
+    "cover": "1.png",
+    "shots": [
+      "1.png",
+      "2.png"
+    ]
+  },
+  "guard-bot": {
+    "folder": "Guard",
+    "cover": "1.jpg",
+    "shots": [
+      "5.png",
+      "3.png",
+      "4.png",
+      "2.png"
+    ]
+  },
+  "other-projects": {
+    "folder": "Other",
+    "cover": "1.jpg",
+    "shots": [
+      "1.jpg"
+    ]
+  },
+  "_hero": {
+    "folder": "_hero",
+    "cover": "hero.jpg",
+    "shots": []
+  }
+}
