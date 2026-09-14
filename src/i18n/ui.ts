@@ -1,0 +1,40 @@
+import type { Localized } from '../types';
+
+export const UI = {
+  navCases: { uk: 'Кейси', en: 'Cases' },
+  navAbout: { uk: 'Про мене', en: 'About' },
+  navStack: { uk: 'Стек', en: 'Stack' },
+  navContact: { uk: 'Контакти', en: 'Contact' },
+  heroRole: { uk: 'бекенд · боти · автоматизація', en: 'backend · bots · automation' },
+  heroCta: { uk: 'Дивитись кейси', en: 'View cases' },
+  heroCv: { uk: 'Завантажити CV', en: 'Download CV' },
+  metricYears: { uk: 'років у коді', en: 'years coding' },
+  metricProjects: { uk: 'проєктів', en: 'projects' },
+  metricStack: { uk: 'технологій', en: 'technologies' },
+  aboutTitle: { uk: 'Про мене', en: 'About' },
+  timelineTitle: { uk: 'Шлях', en: 'Timeline' },
+  stackTitle: { uk: 'Стек', en: 'Stack' },
+  levelDaily: { uk: 'щоденно', en: 'daily' },
+  levelConfident: { uk: 'впевнено', en: 'confident' },
+  levelFamiliar: { uk: 'знайомий', en: 'familiar' },
+  casesTitle: { uk: 'Кейси', en: 'Cases' },
+  casesAll: { uk: 'Усі', en: 'All' },
+  casesRest: { uk: 'Решта проєктів', en: 'Other projects' },
+  casesEmpty: {
+    uk: 'Немає проєктів із цією технологією',
+    en: 'No projects use this technology',
+  },
+  contactTitle: { uk: 'Контакти', en: 'Contact' },
+  statusProduction: { uk: 'у продакшені', en: 'production' },
+  statusArchived: { uk: 'в архіві', en: 'archived' },
+  statusPet: { uk: 'пет-проєкт', en: 'pet project' },
+  backToCases: { uk: 'Назад до кейсів', en: 'Back to cases' },
+  notFoundTitle: { uk: 'Сторінку не знайдено', en: 'Page not found' },
+  notFoundHome: { uk: 'На головну', en: 'Go home' },
+  linkGithub: { uk: 'Код на GitHub', en: 'Code on GitHub' },
+  linkTelegram: { uk: 'Відкрити в Telegram', en: 'Open in Telegram' },
+  linkLive: { uk: 'Живий сайт', en: 'Live site' },
+  linkYoutube: { uk: 'Відео', en: 'Video' },
+} satisfies Record<string, Localized>;
+
+export type UiKey = keyof typeof UI;
