@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/ico.jpg" />
     <title>Sergiy Zelinskii</title>
+    <script>
+      // Ставимо тему до першої відмальовки: React робить це вже після
+      // завантаження, і той, хто обрав темну, встиг би побачити білий спалах.
+      try {
+        if (localStorage.getItem('portfolio-theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>

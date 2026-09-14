@@ -1,6 +1,8 @@
 import { Link } from 'react-router';
 import type { ReactNode } from 'react';
+import { Moon, Sun } from 'lucide-react';
 import { useLang } from '../i18n/LangContext';
+import { useTheme } from '../theme/ThemeContext';
 import { useHashScroll } from '../hooks/useHashScroll';
 import { profile } from '../data/profile';
 
@@ -13,7 +15,11 @@ const NAV = [
 
 export function Shell({ children }: { children: ReactNode }) {
   const { lang, setLang, t } = useLang();
+  const { theme, toggle } = useTheme();
   useHashScroll();
+
+  const control =
+    'rounded border border-border-strong text-text-dim hover:border-accent hover:text-text';
 
   return (
     <div className="min-h-screen bg-bg text-text">
@@ -32,14 +38,28 @@ export function Shell({ children }: { children: ReactNode }) {
               </Link>
             ))}
           </nav>
-          <button
-            type="button"
-            onClick={() => setLang(lang === 'uk' ? 'en' : 'uk')}
-            className="rounded border border-border-strong px-2.5 py-1 font-mono text-xs text-text-dim hover:border-accent hover:text-text"
-            aria-label={lang === 'uk' ? 'Switch to English' : 'Перемкнути на українську'}
-          >
-            {lang === 'uk' ? 'EN' : 'UK'}
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={toggle}
+              className={`${control} p-1.5`}
+              aria-label={t(theme === 'dark' ? 'themeToLight' : 'themeToDark')}
+            >
+              {theme === 'dark' ? (
+                <Sun size={14} aria-hidden="true" />
+              ) : (
+                <Moon size={14} aria-hidden="true" />
+              )}
+            </button>
+            <button
+              type="button"
+              onClick={() => setLang(lang === 'uk' ? 'en' : 'uk')}
+              className={`${control} px-2.5 py-1 font-mono text-xs`}
+              aria-label={lang === 'uk' ? 'Switch to English' : 'Перемкнути на українську'}
+            >
+              {lang === 'uk' ? 'EN' : 'UK'}
+            </button>
+          </div>
         </div>
       </header>
 

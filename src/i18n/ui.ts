@@ -32,6 +32,8 @@ export const UI = {
   statusPet: { uk: 'пет-проєкт', en: 'pet project' },
   backToCases: { uk: 'Назад до кейсів', en: 'Back to cases' },
   shotAlt: { uk: 'знімок екрана', en: 'screenshot' },
+  themeToDark: { uk: 'Увімкнути темну тему', en: 'Switch to dark theme' },
+  themeToLight: { uk: 'Увімкнути світлу тему', en: 'Switch to light theme' },
   notFoundTitle: { uk: 'Сторінку не знайдено', en: 'Page not found' },
   notFoundHome: { uk: 'На головну', en: 'Go home' },
   linkGithub: { uk: 'Код на GitHub', en: 'Code on GitHub' },
