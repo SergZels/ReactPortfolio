@@ -5,6 +5,7 @@ import { projects } from '../data/projects';
 import { useLang } from '../i18n/LangContext';
 import type { UiKey } from '../i18n/ui';
 import { useMeta } from '../hooks/useMeta';
+import { asset } from '../lib/asset';
 import NotFound from './NotFound';
 import type { Project as ProjectType } from '../types';
 
@@ -82,8 +83,8 @@ export default function Project() {
         {project.shots.map((shot, i) => (
           <figure key={shot.src}>
             <img
-              src={shot.src}
-              srcSet={`${shot.src.replace('-1280', '-640')} 640w, ${shot.src} 1280w`}
+              src={asset(shot.src)}
+              srcSet={`${asset(shot.src.replace('-1280', '-640'))} 640w, ${asset(shot.src)} 1280w`}
               sizes="(max-width: 900px) 100vw, 900px"
               alt={
                 shot.caption

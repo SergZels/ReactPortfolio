@@ -1,6 +1,7 @@
 import { profile, YEARS_CODING } from '../data/profile';
 import { projects } from '../data/projects';
 import { useLang } from '../i18n/LangContext';
+import { asset } from '../lib/asset';
 
 export function Hero() {
   const { t, pick } = useLang();
@@ -35,7 +36,7 @@ export function Hero() {
           {t('heroCta')}
         </a>
         <a
-          href={profile.cvUrl}
+          href={asset(profile.cvUrl)}
           className="rounded-md border border-border-strong px-5 py-2.5 text-sm hover:border-accent"
         >
           {t('heroCv')}

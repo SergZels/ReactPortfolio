@@ -2,6 +2,7 @@ import { Link } from 'react-router';
 import type { Project } from '../types';
 import { useLang } from '../i18n/LangContext';
 import type { UiKey } from '../i18n/ui';
+import { asset } from '../lib/asset';
 
 const STATUS_KEY: Record<Project['status'], UiKey> = {
   production: 'statusProduction',
@@ -24,7 +25,7 @@ export function ProjectCard({
       className="group block overflow-hidden rounded-xl border border-border bg-surface transition-all duration-200 hover:-translate-y-0.5 hover:border-border-strong motion-reduce:transition-none motion-reduce:hover:translate-y-0"
     >
       <img
-        src={project.cover}
+        src={asset(project.cover)}
         alt=""
         loading="lazy"
         width={640}
