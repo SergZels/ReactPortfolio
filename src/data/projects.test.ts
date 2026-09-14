@@ -25,6 +25,21 @@ describe('дані проєктів', () => {
     expect(JSON.stringify(projects)).not.toContain('zelse.asuscomm.com');
   });
 
+  it('жоден текст не лишився без перекладу', () => {
+    // Однаковий текст у uk і en означає, що переклад забули: під час
+    // перенесення контенту uk тимчасово дублював en.
+    const untranslated: string[] = [];
+    for (const p of projects) {
+      if (p.summary.uk === p.summary.en) untranslated.push(`${p.slug}: summary`);
+      for (const [i, shot] of p.shots.entries()) {
+        if (shot.caption && shot.caption.uk === shot.caption.en) {
+          untranslated.push(`${p.slug}: кадр ${i + 1}`);
+        }
+      }
+    }
+    expect(untranslated).toEqual([]);
+  });
+
   it.each(projects.map((p) => [p.slug, p] as const))('%s — коректний', (_slug, p) => {
     expect(p.slug).toMatch(/^[a-z0-9-]+$/);
     expect(p.title.trim()).not.toBe('');
