@@ -38,7 +38,12 @@ export type Tech = (typeof KNOWN_STACK)[number];
 
 export type Shot = {
   src: string;
-  caption: Localized;
+  /**
+   * Підпис необов'язковий: у старому портфоліо підписи мали лише 47 кадрів
+   * зі 112. Де підпису не було, кадр лишається без нього — вигадувати опис
+   * чужого скриншота гірше, ніж показати його мовчки.
+   */
+  caption?: Localized;
 };
 
 export type Project = {

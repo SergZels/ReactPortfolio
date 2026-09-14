@@ -36,7 +36,8 @@ describe('дані проєктів', () => {
       expect(KNOWN_STACK).toContain(tech);
     }
     for (const shot of p.shots) {
-      expect(localized(shot.caption)).toBe(true);
+      // Підпис необов'язковий, але якщо він є — має бути двома мовами.
+      if (shot.caption) expect(localized(shot.caption)).toBe(true);
     }
   });
 

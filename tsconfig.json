@@ -15,7 +15,7 @@
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
-    "types": ["vitest/globals", "@testing-library/jest-dom"]
+    "types": ["node", "vitest/globals", "@testing-library/jest-dom"]
   },
   "include": ["src", "vitest.setup.ts", "vite.config.ts"]
 }
