@@ -1,6 +1,7 @@
 import { Link } from 'react-router';
 import type { ReactNode } from 'react';
 import { useLang } from '../i18n/LangContext';
+import { useHashScroll } from '../hooks/useHashScroll';
 import { profile } from '../data/profile';
 
 const NAV = [
@@ -12,6 +13,7 @@ const NAV = [
 
 export function Shell({ children }: { children: ReactNode }) {
   const { lang, setLang, t } = useLang();
+  useHashScroll();
 
   return (
     <div className="min-h-screen bg-bg text-text">
@@ -21,10 +23,13 @@ export function Shell({ children }: { children: ReactNode }) {
             ~/sergzels
           </Link>
           <nav className="hidden gap-5 text-sm text-text-dim sm:flex">
+            {/* Саме Link, а не <a>: він додає базовий шлях збірки.
+                Звичайний href="/#about" на GitHub Pages вів би на корінь
+                домену — зовсім інший сайт. */}
             {NAV.map((item) => (
-              <a key={item.key} href={item.href} className="hover:text-text">
+              <Link key={item.key} to={item.href} className="hover:text-text">
                 {t(item.key)}
-              </a>
+              </Link>
             ))}
           </nav>
           <button
