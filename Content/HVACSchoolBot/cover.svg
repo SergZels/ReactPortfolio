@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0d1215"/>
+      <stop offset="1" stop-color="#18313a"/>
+    </linearGradient>
+    <linearGradient id="unit" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#e9f3f4"/>
+      <stop offset="1" stop-color="#a9c7cf"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#6ad3e5" stop-opacity=".26"/>
+      <stop offset="1" stop-color="#6ad3e5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1010" cy="210" r="440" fill="url(#glow)"/>
+  <path d="M0 587 C300 516 480 645 763 572 C987 514 1093 524 1280 585" fill="none" stroke="#6ad3e5" stroke-opacity=".12" stroke-width="2"/>
+  <path d="M0 623 C280 553 500 687 800 605 C1030 540 1130 582 1280 614" fill="none" stroke="#f2a541" stroke-opacity=".12" stroke-width="2"/>
+  <rect x="90" y="115" width="92" height="8" rx="4" fill="#f2a541"/>
+  <text x="90" y="300" fill="#eaf2f4" font-family="Arial, sans-serif" font-weight="700" font-size="92" letter-spacing="-4">HVAC</text>
+  <text x="90" y="404" fill="#eaf2f4" font-family="Arial, sans-serif" font-weight="700" font-size="92" letter-spacing="-4">School</text>
+  <text x="94" y="470" fill="#a9dfe8" font-family="Arial, sans-serif" font-size="30" letter-spacing="2">TELEGRAM LEARNING PLATFORM</text>
+  <g transform="translate(745 160)">
+    <rect x="0" y="0" width="425" height="265" rx="34" fill="#0f2027" stroke="#6ad3e5" stroke-opacity=".55" stroke-width="3"/>
+    <rect x="28" y="32" width="369" height="144" rx="22" fill="url(#unit)"/>
+    <path d="M52 144 H372" stroke="#45636c" stroke-width="5" stroke-linecap="round"/>
+    <path d="M77 160 H346" stroke="#69929c" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="361" cy="69" r="8" fill="#f2a541"/>
+    <path d="M75 217 C97 250 122 243 132 274 C143 304 116 321 109 337" fill="none" stroke="#6ad3e5" stroke-width="11" stroke-linecap="round" opacity=".85"/>
+    <path d="M204 217 C226 250 251 243 261 274 C272 304 245 321 238 337" fill="none" stroke="#6ad3e5" stroke-width="11" stroke-linecap="round" opacity=".66"/>
+    <path d="M333 217 C355 250 380 243 390 274 C401 304 374 321 367 337" fill="none" stroke="#6ad3e5" stroke-width="11" stroke-linecap="round" opacity=".48"/>
+  </g>
+  <rect x="89" y="584" width="1102" height="1" fill="#6ad3e5" opacity=".22"/>
+  <text x="91" y="634" fill="#b8c6cc" font-family="Arial, sans-serif" font-size="23">VIDEO LESSONS</text>
+  <circle cx="343" cy="626" r="5" fill="#f2a541"/>
+  <text x="370" y="634" fill="#b8c6cc" font-family="Arial, sans-serif" font-size="23">QUIZZES</text>
+  <circle cx="549" cy="626" r="5" fill="#f2a541"/>
+  <text x="576" y="634" fill="#b8c6cc" font-family="Arial, sans-serif" font-size="23">MENTOR FEEDBACK</text>
+</svg>

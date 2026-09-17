@@ -29,3 +29,10 @@ yarn-error.log*
 # Оригінальні скриншоти магазину з персональними даними
 /Content/RukodilnaHatynka/Адмінка.png
 /Content/RukodilnaHatynka/телеграм бот.png
+
+# Приватні вихідні скриншоти; для портфоліо використовуються знеособлені копії
+/Content/WaterBot/v2/бот.png
+/Content/WaterBot/v2/бот 2.png
+/Content/WaterBot/v2/адмінка.png
+/Content/Summyze/Знімок екрана *.png
+/Content/HVACSchoolBot/Знімок екрана 2026-09-16 160137.png
