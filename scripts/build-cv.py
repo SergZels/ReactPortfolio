@@ -102,7 +102,7 @@ linked_text(LEFT, y, "sergzels@gmail.com", "mailto:sergzels@gmail.com")
 linked_text(LEFT + 133, y, "LinkedIn", "https://www.linkedin.com/in/sergzel/")
 linked_text(LEFT + 206, y, "GitHub", "https://github.com/SergZels")
 linked_text(LEFT + 271, y, "Telegram", "https://t.me/SZelinsky")
-linked_text(LEFT + 357, y, "Portfolio", "https://sergzels.github.io/ReactPortfolio/")
+linked_text(LEFT + 357, y, "Portfolio", "https://sergzels.github.io/")
 y -= 16
 text(LEFT, y, "Terebovlia, Ukraine", size=8.8, color=MUTED)
 
@@ -139,14 +139,14 @@ y = project(
     "Develop and operate a single-tenant platform across many servers. Nearly two years on the project; "
     "its codebase exceeds 100,000 lines. Product details remain confidential.",
     "FastAPI, Telethon, OpenAI, OpenRouter, Elasticsearch, Playwright, ElevenLabs",
-    "https://sergzels.github.io/ReactPortfolio/project/community",
+    "https://sergzels.github.io/project/community",
 )
 y = project(
     y, "Community Ecosystem  |  supporting applications",
     "A separate ecosystem that supports Community: one major application with over 200,000 lines "
     "of code and many smaller companion applications. Internal workflows remain confidential.",
     "FastAPI, PostgreSQL, ELK, MCP integrations, S3, gspread",
-    "https://sergzels.github.io/ReactPortfolio/project/community-ecosystem",
+    "https://sergzels.github.io/project/community-ecosystem",
 )
 y = project(
     y, "Terebovlia Info AI  |  community information portal",
@@ -167,7 +167,7 @@ y = project(
     "Delivered a CRM for orders, parts inventory, technician payroll and customer communication "
     "with a Django backend and an aiogram bot interface.",
     "Django, aiogram, PostgreSQL, Docker",
-    "https://sergzels.github.io/ReactPortfolio/project/rrepair-crm",
+    "https://sergzels.github.io/project/rrepair-crm",
 )
 
 y = heading(y, "Technical focus")
