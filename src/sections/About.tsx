@@ -15,7 +15,7 @@ export function About() {
       <h3 className="mt-14 font-mono text-sm text-accent">{t('timelineTitle')}</h3>
       <ol className="mt-6 border-l border-border">
         {profile.timeline.map((item) => (
-          <li key={item.year} className="relative py-4 pl-6">
+          <li key={`${item.year}-${item.title.en}`} className="relative py-4 pl-6">
             <span className="absolute -left-[4.5px] top-6 h-2 w-2 rounded-full bg-accent" />
             <Reveal>
               <div className="font-mono text-xs text-text-faint">{item.year}</div>

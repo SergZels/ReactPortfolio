@@ -1,4 +1,82 @@
 {
+  "community-ecosystem": {
+    "folder": "CommunityEcosystem",
+    "cover": "cover.png",
+    "shots": []
+  },
+  "community": {
+    "folder": "Community",
+    "cover": "cover.png",
+    "shots": []
+  },
+  "hvac-school-bot": {
+    "folder": "HVACSchoolBot",
+    "cover": "cover.svg",
+    "shots": [
+      "Знімок екрана 2026-09-16 155845.png",
+      "Знімок екрана 2026-09-16 155936.png",
+      "Знімок екрана 2026-09-16 160051.png",
+      "bot-feedback-cropped.png"
+    ]
+  },
+  "summyze": {
+    "folder": "Summyze",
+    "cover": "cover.png",
+    "shots": [
+      "tickets-demo.jpg",
+      "chat-demo.jpg"
+    ]
+  },
+  "water-bot-v2": {
+    "folder": "WaterBot/v2",
+    "cover": "cover-generated.png",
+    "shots": [
+      "форма подання.png",
+      "бот-2-redacted.png",
+      "бот-redacted.png",
+      "адмінка-redacted.png"
+    ]
+  },
+  "terinfo-ai": {
+    "folder": "TerInfoAI",
+    "cover": "cover.png",
+    "shots": [
+      "сайт на react.png",
+      "Знімок екрана 2026-09-16 144521.png",
+      "векторна база.png",
+      "Адмінка на Django.png"
+    ]
+  },
+  "smartses": {
+    "folder": "SmartSES",
+    "cover": "dashboard.png",
+    "shots": [
+      "dashboard.png",
+      "Знімок екрана 2026-09-16 095218.png",
+      "Знімок екрана 2026-09-16 095237.png"
+    ]
+  },
+  "rukodilna-hatynka": {
+    "folder": "RukodilnaHatynka",
+    "cover": "cover.png",
+    "shots": [
+      "home.png",
+      "флто із магазину.png",
+      "товар.png",
+      "корзина.png",
+      "admin-redacted.png",
+      "telegram-redacted.png"
+    ]
+  },
+  "zelse-terminal": {
+    "folder": "Terminal",
+    "cover": "terminal.png",
+    "shots": [
+      "terminal.png",
+      "SFTP.png",
+      "ssh tunels.png"
+    ]
+  },
   "rrepair-crm": {
     "folder": "RR",
     "cover": "0.jpg",

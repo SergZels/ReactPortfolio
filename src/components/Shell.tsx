@@ -22,8 +22,8 @@ export function Shell({ children }: { children: ReactNode }) {
     'rounded border border-border-strong text-text-dim hover:border-accent hover:text-text';
 
   return (
-    <div className="min-h-screen bg-bg text-text">
-      <header className="sticky top-0 z-10 border-b border-border bg-bg/85 backdrop-blur">
+    <div className="site-shell min-h-screen bg-bg text-text">
+      <header className="site-header sticky top-0 z-10 border-b border-border bg-bg/85 backdrop-blur">
         <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-5 py-4">
           <Link to="/" className="font-mono text-sm text-text hover:text-accent">
             ~/sergzels

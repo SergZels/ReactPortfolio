@@ -25,7 +25,7 @@ export function Stack() {
                 .map((s) => (
                   <li
                     key={s.label}
-                    className="rounded border border-border bg-surface px-3 py-1.5 font-mono text-sm text-text-dim"
+                    className="stack-chip rounded border border-border bg-surface px-3 py-1.5 font-mono text-sm text-text-dim"
                   >
                     {s.label}
                   </li>

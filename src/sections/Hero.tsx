@@ -14,14 +14,14 @@ export function Hero() {
 
   return (
     <section className="py-20 sm:py-28">
-      <p className="font-mono text-sm text-accent">~/sergzels $ whoami</p>
+      <p className="hero-prompt font-mono text-sm text-accent">~/sergzels $ whoami</p>
       <h1 className="mt-4 text-4xl font-medium sm:text-5xl">{profile.name}</h1>
       <p className="mt-3 font-mono text-sm text-text-dim">{t('heroRole')}</p>
       <p className="mt-6 max-w-2xl text-lg leading-relaxed text-text-dim">{pick(profile.tagline)}</p>
 
       <div className="mt-10 grid grid-cols-3 gap-3 sm:max-w-md">
         {metrics.map((m) => (
-          <div key={m.label} className="rounded-lg bg-surface px-4 py-3">
+          <div key={m.label} className="hero-metric rounded-lg bg-surface px-4 py-3">
             <div className="text-2xl font-medium">{m.value}</div>
             <div className="mt-0.5 text-xs text-text-faint">{m.label}</div>
           </div>

@@ -22,7 +22,7 @@ export function ProjectCard({
   return (
     <Link
       to={`/project/${project.slug}`}
-      className="group block overflow-hidden rounded-xl border border-border bg-surface transition-all duration-200 hover:-translate-y-0.5 hover:border-border-strong motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+      className="project-card group block overflow-hidden rounded-xl border border-border bg-surface transition-all duration-200 hover:-translate-y-0.5 hover:border-border-strong motion-reduce:transition-none motion-reduce:hover:translate-y-0"
     >
       <img
         src={asset(project.cover)}

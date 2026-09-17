@@ -8,12 +8,19 @@ const PUBLIC_DIR = resolve(import.meta.dirname, '../../public');
 const localized = (v: Localized) => v.uk.trim().length > 0 && v.en.trim().length > 0;
 
 describe('дані проєктів', () => {
-  it('містить рівно 24 проєкти', () => {
-    expect(projects).toHaveLength(24);
+  it('містить рівно 33 проєкти', () => {
+    expect(projects).toHaveLength(33);
   });
 
-  it('має рівно 6 featured-проєктів', () => {
-    expect(projects.filter((p) => p.featured)).toHaveLength(6);
+  it('має рівно 10 featured-проєктів', () => {
+    expect(projects.filter((p) => p.featured)).toHaveLength(10);
+  });
+
+  it('показує Community перед Community Ecosystem', () => {
+    expect(projects.slice(0, 2).map((p) => p.slug)).toEqual([
+      'community',
+      'community-ecosystem',
+    ]);
   });
 
   it('усі slug унікальні', () => {

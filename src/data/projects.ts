@@ -6,6 +6,312 @@ import type { Project } from '../types';
  */
 export const projects: Project[] = [
   {
+    slug: 'community',
+    title: 'Community',
+    year: 2026,
+    status: 'production',
+    featured: true,
+    summary: {
+      en: 'A large, ongoing platform under NDA that I have worked on for almost two years. Its codebase exceeds 100,000 lines. I develop and maintain its backend and integrations across a single-tenant architecture: each deployment is isolated, and I operate many servers. The technology stack includes FastAPI, Telethon, Pillow, Beautiful Soup, OpenRouter, OpenAI, Elasticsearch, Playwright, ElevenLabs and more. Product details, clients and internal workflows remain confidential.',
+      uk: 'Великий проєкт, над яким працюю майже два роки; його кодова база перевищує 100 000 рядків. Деталі захищені NDA. Розробляю й підтримую бекенд та інтеграції в single-tenant архітектурі: кожне розгортання ізольоване, тому обслуговую багато серверів. У технологічному стеку — FastAPI, Telethon, Pillow, Beautiful Soup, OpenRouter, OpenAI, Elasticsearch, Playwright, ElevenLabs та багато іншого. Дані про продукт, клієнтів і внутрішні процеси не розкриваю.',
+    },
+    stack: ['python', 'fastapi', 'telethon', 'pillow', 'beautifulsoup', 'openrouter', 'openai', 'elasticsearch', 'playwright', 'elevenlabs'],
+    links: {},
+    cover: '/shots/community/cover-640.webp',
+    shots: [],
+  },
+  {
+    slug: 'community-ecosystem',
+    title: 'Community Ecosystem',
+    year: 2026,
+    status: 'production',
+    featured: true,
+    summary: {
+      en: 'Community is the main product. Community Ecosystem is a separate group of applications built to support and maintain it: one large supporting application with more than 200,000 lines of code and many smaller companion applications. I cannot disclose their internal workflows, but the stack includes FastAPI, PostgreSQL, the ELK Stack, numerous MCP integrations, S3, gspread and other technologies.',
+      uk: 'Community — основний продукт. Community Ecosystem — це окрема група застосунків для його роботи й супроводу: один великий допоміжний застосунок із понад 200 000 рядків коду та багато менших. Їхні внутрішні процеси не розкриваю, але в стеку є FastAPI, PostgreSQL, ELK Stack, численні MCP-інтеграції, S3, gspread та інші технології.',
+    },
+    stack: ['python', 'fastapi', 'postgresql', 'elk', 'mcp', 's3', 'gspread'],
+    links: {},
+    cover: '/shots/community-ecosystem/cover-640.webp',
+    shots: [],
+  },
+  {
+    slug: 'hvac-school-bot',
+    title: 'HVAC School Bot',
+    year: 2026,
+    status: 'production',
+    featured: false,
+    summary: {
+      en: 'A Telegram learning platform for HVAC courses. Students enter through one-time invitation tokens, watch video lessons in Telegram, confirm viewing, and work through multiple-choice or written questions. The bot tracks progress, explains wrong answers with links to relevant lessons, and sends written submissions to a teacher for manual review. I built the aiogram 3 bot, Django content and student admin, FastAPI webhook service, and Dockerized deployment with nginx. The course landing page introduces training in air-conditioning, heating and service.',
+      uk: 'Навчальна платформа для HVAC-курсів у Telegram. Студенти заходять за одноразовими запрошеннями, дивляться відеоуроки в Telegram, підтверджують перегляд і проходять тести або відповідають на відкриті запитання. Бот відстежує прогрес, пояснює помилки з посиланнями на відповідні уроки та передає письмові відповіді викладачу на ручну перевірку. Я розробив бота на aiogram 3, Django-адмінку для контенту й студентів, FastAPI-сервіс webhook та контейнеризоване розгортання з nginx. Лендинг представляє навчання з кондиціонування, опалення й сервісу.',
+    },
+    stack: ['python', 'aiogram', 'django', 'fastapi', 'sqlite', 'docker', 'nginx', 'html-css'],
+    links: {
+      telegram: 'https://t.me/HVAC_SCH00L_BOT',
+    },
+    cover: '/shots/hvac-school-bot/cover-640.webp',
+    shots: [
+      {
+        src: '/shots/hvac-school-bot/1-1280.webp',
+        caption: {
+          en: 'The Django admin manages lessons, questions, answer options, access tokens and student progress.',
+          uk: 'Django-адмінка керує уроками, запитаннями, варіантами відповідей, токенами доступу й прогресом студентів.',
+        },
+      },
+      {
+        src: '/shots/hvac-school-bot/2-1280.webp',
+        caption: {
+          en: 'An editor configures a lesson question, optional photo, response mode and correct multiple-choice answer.',
+          uk: 'Редактор налаштовує запитання уроку, необов’язкове фото, режим відповіді та правильний варіант тесту.',
+        },
+      },
+      {
+        src: '/shots/hvac-school-bot/3-1280.webp',
+        caption: {
+          en: 'In Telegram, the student watches a video lesson, confirms viewing and moves on to the quiz.',
+          uk: 'У Telegram студент дивиться відеоурок, підтверджує перегляд і переходить до тесту.',
+        },
+      },
+      {
+        src: '/shots/hvac-school-bot/4-1280.webp',
+        caption: {
+          en: 'A teacher can review a written answer and return voice feedback before the student continues.',
+          uk: 'Викладач може перевірити письмову відповідь і надіслати голосовий коментар перед продовженням навчання.',
+        },
+      },
+    ],
+  },
+  {
+    slug: 'smartses',
+    title: 'SmartSES',
+    year: 2026,
+    status: 'production',
+    featured: true,
+    summary: {
+      en: 'An end-to-end monitoring and control system for a solar power station. ESP32 firmware reads a JBD battery BMS over BLE and publishes telemetry through MQTT; a FastAPI service stores history in SQLite, streams live data over WebSocket, controls timed charging, sends Telegram alerts, and exposes read-only MCP tools for AI agents.',
+      uk: 'Наскрізна система моніторингу й керування сонячною електростанцією. Прошивка ESP32 читає JBD BMS через BLE та передає телеметрію через MQTT; сервіс на FastAPI зберігає історію в SQLite, транслює live-дані через WebSocket, керує зарядкою за таймером, надсилає Telegram-алерти й надає read-only MCP-інструменти для AI-агентів.',
+    },
+    stack: ['python', 'fastapi', 'mqtt', 'esp32', 'cpp', 'mcp', 'javascript', 'sqlite', 'docker'],
+    links: {},
+    cover: '/shots/smartses/cover-640.webp',
+    shots: [
+      {
+        src: '/shots/smartses/1-1280.webp',
+        caption: {
+          en: 'The live dashboard combines battery charge, voltage, current, temperature, BMS state, energy flow history, and per-cell voltages.',
+          uk: 'Live-дашборд поєднує заряд батареї, напругу, струм, температуру, стан BMS, історію потоків енергії та напруги окремих комірок.',
+        },
+      },
+      {
+        src: '/shots/smartses/2-1280.webp',
+        caption: {
+          en: 'A 24-hour charge chart and system event log make battery behaviour and state changes easy to audit.',
+          uk: 'Добовий графік заряду та журнал системних подій дають змогу відстежувати поведінку батареї й зміни її стану.',
+        },
+      },
+      {
+        src: '/shots/smartses/3-1280.webp',
+        caption: {
+          en: 'Telegram reports charge and discharge milestones and sends alerts when monitored conditions change.',
+          uk: 'Telegram повідомляє про рівні заряду й розряду та надсилає алерти, коли контрольовані стани змінюються.',
+        },
+      },
+    ],
+  },
+  {
+    slug: 'rukodilna-hatynka',
+    title: 'Рукодільна хатинка',
+    year: 2026,
+    status: 'production',
+    featured: true,
+    summary: {
+      en: 'An SEO-first online craft-supplies store built with FastAPI, Jinja2 and HTMX. It includes a product catalog with variants and faceted filters, FTS5 search, cart and checkout, customer accounts, a custom admin panel, CSV/Excel imports, and Telegram order notifications.',
+      uk: 'SEO-first інтернет-магазин товарів для рукоділля на FastAPI, Jinja2 і HTMX. Є каталог із варіантами та фасетними фільтрами, FTS5-пошук, кошик і checkout, акаунти покупців, власна адмінка, імпорт CSV/Excel і Telegram-сповіщення про замовлення.',
+    },
+    stack: ['python', 'fastapi', 'jinja2', 'htmx', 'sqlalchemy', 'sqlite', 'docker'],
+    links: {
+      github: 'https://github.com/SergZels/rukodilna-hatynka',
+      live: 'https://rukodilna-hatynka.orxid.in.ua/',
+    },
+    cover: '/shots/rukodilna-hatynka/cover-640.webp',
+    shots: [
+      {
+        src: '/shots/rukodilna-hatynka/1-1280.webp',
+        caption: {
+          en: 'The storefront home page presents the brand and leads customers directly into the product catalog.',
+          uk: 'Головна сторінка презентує бренд і веде покупця прямо до каталогу.',
+        },
+      },
+      {
+        src: '/shots/rukodilna-hatynka/2-1280.webp',
+        caption: {
+          en: 'A production category page with eleven products, a visual category header and responsive product cards.',
+          uk: 'Продакшен-сторінка категорії з одинадцятьма товарами, візуальною обкладинкою та адаптивними картками.',
+        },
+      },
+      {
+        src: '/shots/rukodilna-hatynka/3-1280.webp',
+        caption: {
+          en: 'The live product page shows the description, price, SKU, stock status and quantity controls.',
+          uk: 'Жива сторінка товару показує опис, ціну, артикул, наявність і керування кількістю.',
+        },
+      },
+      {
+        src: '/shots/rukodilna-hatynka/4-1280.webp',
+        caption: {
+          en: 'The cart recalculates quantities and totals and leads the customer into checkout.',
+          uk: 'Кошик перераховує кількість і суму та веде покупця до оформлення замовлення.',
+        },
+      },
+      {
+        src: '/shots/rukodilna-hatynka/5-1280.webp',
+        caption: {
+          en: 'The custom admin panel manages products, categories, brands, attributes, imports, orders and stock.',
+          uk: 'Власна адмінка керує товарами, категоріями, брендами, атрибутами, імпортом, замовленнями та залишками.',
+        },
+      },
+      {
+        src: '/shots/rukodilna-hatynka/6-1280.webp',
+        caption: {
+          en: 'A Telegram bot immediately sends the owner a structured notification about every new order.',
+          uk: 'Telegram-бот миттєво надсилає власнику структуроване сповіщення про кожне нове замовлення.',
+        },
+      },
+    ],
+  },
+  {
+    slug: 'zelse-terminal',
+    title: 'Zelse soft Terminal',
+    year: 2026,
+    status: 'production',
+    featured: true,
+    summary: {
+      en: 'A local web terminal for PowerShell and remote SSH servers. It combines an encrypted server vault, SFTP file browsing and folder uploads, SSH tunnels, a WebSocket terminal, and nginx + SSL automation.',
+      uk: 'Локальний вебтермінал для PowerShell і віддалених SSH-серверів. Поєднує зашифроване сховище серверів, SFTP-браузер і завантаження папок, SSH-тунелі, WebSocket-термінал та автоматизацію nginx + SSL.',
+    },
+    stack: ['python', 'fastapi', 'javascript', 'html-css', 'sqlite'],
+    links: {
+      github: 'https://github.com/SergZels/terminal',
+    },
+    cover: '/shots/zelse-terminal/cover-640.webp',
+    shots: [
+      {
+        src: '/shots/zelse-terminal/1-1280.webp',
+        caption: {
+          en: 'One interface for a local PowerShell shell, remote SSH sessions, files, tunnels, and repeatable SFTP folder uploads.',
+          uk: 'Єдиний інтерфейс для локальної PowerShell, віддалених SSH-сесій, файлів, тунелів і повторюваних SFTP-завантажень папок.',
+        },
+      },
+      {
+        src: '/shots/zelse-terminal/2-1280.webp',
+        caption: {
+          en: 'Reusable SFTP upload profiles synchronize selected local folders with remote servers.',
+          uk: 'Багаторазові SFTP-профілі синхронізують вибрані локальні папки з віддаленими серверами.',
+        },
+      },
+      {
+        src: '/shots/zelse-terminal/3-1280.webp',
+        caption: {
+          en: 'Saved SSH tunnels provide local access to databases and other private services.',
+          uk: 'Збережені SSH-тунелі надають локальний доступ до баз даних та інших приватних сервісів.',
+        },
+      },
+    ],
+  },
+  {
+    slug: 'water-bot-v2',
+    title: 'Water Bot v2',
+    year: 2026,
+    status: 'production',
+    featured: false,
+    summary: {
+      en: 'A rebuilt water-meter reporting service for the Terebovlia utility. Residents submit readings through an aiogram 3 Telegram bot or a FastAPI web form, review the details before confirming, and can enter either a meter value or consumed cubic metres (for example, +4). The service accepts submissions from the 20th, sends monthly reminders, and keeps the database compatible with the original bot. Staff can filter and mark readings as processed in a password-protected web view and export Excel reports. Built with Python, SQLite and Docker Compose.',
+      uk: 'Оновлений сервіс подання показників води для Теребовлянського водоканалу. Мешканці надсилають показники через Telegram-бота на aiogram 3 або вебформу FastAPI, перевіряють дані перед підтвердженням і можуть вказати як показ лічильника, так і спожиті куби (наприклад, +4). Сервіс приймає показники з 20-го числа, щомісяця надсилає нагадування й зберігає сумісність із базою старого бота. Працівники можуть фільтрувати та позначати оброблені записи в захищеному вебінтерфейсі й експортувати Excel-звіти. Стек: Python, SQLite та Docker Compose.',
+    },
+    stack: ['python', 'aiogram', 'fastapi', 'sqlite', 'sqlalchemy', 'docker', 'excel'],
+    links: {
+      telegram: 'https://t.me/TerebovlaVodokanal_bot',
+    },
+    cover: '/shots/water-bot-v2/cover-640.webp',
+    shots: [
+      {
+        src: '/shots/water-bot-v2/1-1280.webp',
+        caption: {
+          en: 'The public web form accepts text readings and opens submissions from the 20th of each month. Users review their details before the reading is saved.',
+          uk: 'Публічна вебформа приймає текстові показники з 20-го числа кожного місяця. Перед збереженням користувач перевіряє введені дані.',
+        },
+      },
+      {
+        src: '/shots/water-bot-v2/2-1280.webp',
+        caption: {
+          en: 'The Telegram bot guides residents through a four-step flow: account, name, address and meter reading. Subscriber details are hidden in this public screenshot.',
+          uk: 'Telegram-бот веде мешканців через чотири кроки: рахунок, ПІБ, адресу й показник. Дані абонента на публічному скриншоті приховано.',
+        },
+      },
+      {
+        src: '/shots/water-bot-v2/3-1280.webp',
+        caption: {
+          en: 'Before submission, residents can confirm, edit individual fields or cancel; the bot then acknowledges the reading. Subscriber details are hidden.',
+          uk: 'Перед поданням мешканці можуть підтвердити, змінити окремі поля або скасувати запис; бот повідомляє про прийняття показника. Дані абонента приховано.',
+        },
+      },
+      {
+        src: '/shots/water-bot-v2/4-1280.webp',
+        caption: {
+          en: 'The protected staff view offers monthly statistics, filters, processing status and an Excel export. Rows with subscriber data are excluded from the public image.',
+          uk: 'Захищений інтерфейс для працівників показує статистику за місяць, фільтри, статус обробки та експорт Excel. Рядки з даними абонентів не потрапили до публічного кадру.',
+        },
+      },
+    ],
+  },
+  {
+    slug: 'terinfo-ai',
+    title: 'Теребовля Інфо AI',
+    year: 2025,
+    status: 'production',
+    featured: true,
+    summary: {
+      en: 'A digital guide to the Terebovlia community: residents and visitors can browse places, organizations, services and transport through a searchable web catalog or ask the Telegram assistant. I built the FastAPI backend, aiogram bot, Django admin panel and inter-service APIs; a teammate built the React frontend. The assistant uses RAG: multilingual embeddings index curated question–answer pairs in Qdrant, semantic search retrieves relevant entries, and an LLM generates an answer using that context and catalog data. PostgreSQL stores the catalog, Redis supports caching, and Docker packages the services.',
+      uk: 'Цифровий довідник Теребовлянської громади: мешканці й гості переглядають локації, установи, послуги й транспорт у вебкаталозі з пошуком або запитують Telegram-помічника. Я розробив бекенд на FastAPI, бота на aiogram, адмінпанель Django та API між сервісами; React-фронтенд створив учасник команди. AI-помічник працює за принципом RAG: багатомовні ембеддинги індексують перевірені пари «питання–відповідь» у Qdrant, семантичний пошук знаходить релевантні записи, а мовна модель формує відповідь із цим контекстом і даними каталогу. PostgreSQL зберігає каталог, Redis підтримує кешування, Docker контейнеризує сервіси.',
+    },
+    stack: ['python', 'fastapi', 'aiogram', 'django', 'react', 'postgresql', 'redis', 'qdrant', 'openai', 'docker'],
+    links: {
+      live: 'https://catalog.terebinfo.in.ua/',
+      telegram: 'https://t.me/TerInfobot',
+    },
+    cover: '/shots/terinfo-ai/cover-640.webp',
+    shots: [
+      {
+        src: '/shots/terinfo-ai/1-1280.webp',
+        caption: {
+          en: 'The React catalog gives residents and visitors a searchable directory of local organizations, shops, services and places.',
+          uk: 'React-каталог дає мешканцям і гостям пошук по місцевих установах, магазинах, послугах та локаціях.',
+        },
+      },
+      {
+        src: '/shots/terinfo-ai/2-1280.webp',
+        caption: {
+          en: 'Nested categories lead to location cards with practical details such as addresses, opening hours and contacts.',
+          uk: 'Вкладені категорії ведуть до карток локацій з адресами, графіком роботи та контактами.',
+        },
+      },
+      {
+        src: '/shots/terinfo-ai/3-1280.webp',
+        caption: {
+          en: 'The Qdrant knowledge-base editor manages question–answer records, semantic similarity search and CSV import/export for the assistant.',
+          uk: 'Редактор бази знань Qdrant керує парами «питання–відповідь», пошуком схожих записів і імпортом/експортом CSV для помічника.',
+        },
+      },
+      {
+        src: '/shots/terinfo-ai/4-1280.webp',
+        caption: {
+          en: 'The Django admin panel maintains the catalog, categories, publication state and other operational data.',
+          uk: 'Django-адмінка керує каталогом, категоріями, публікацією та іншими робочими даними.',
+        },
+      },
+    ],
+  },
+  {
     slug: 'rrepair-crm',
     title: 'RRepair CRM',
     year: 2023,
@@ -58,6 +364,38 @@ export const projects: Project[] = [
       },
       {
         src: '/shots/rrepair-crm/12-1280.webp',
+      },
+    ],
+  },
+  {
+    slug: 'summyze',
+    title: 'SUMMYZE',
+    year: 2025,
+    status: 'production',
+    featured: true,
+    summary: {
+      en: 'An AI-powered SaaS platform for turning support emails into structured tickets and actionable analytics. Incoming mail is summarized and categorized automatically; teams can search and filter tickets, ask questions across a selected set of emails in an AI chat, and receive scheduled daily, weekly and monthly reports. I developed the FastAPI application and its HTML/CSS/JavaScript interface, plus a gateway for client onboarding, plans, support and audit logs. Each client runs in an isolated Docker instance, backed by PostgreSQL; a provisioning service manages container capacity, RabbitMQ queues support email delivery, and a self-hosted Mailu server handles the mail ecosystem.',
+      uk: 'SaaS-платформа, що перетворює листи підтримки на структуровані тікети й аналітику за допомогою AI. Вхідні листи автоматично отримують резюме та категорії; команда може шукати й фільтрувати тікети, ставити запитання до вибірки листів в AI-чаті й отримувати щоденні, щотижневі та щомісячні звіти. Я розробив FastAPI-застосунок та інтерфейс на HTML/CSS/JavaScript, а також gateway для реєстрації клієнтів, тарифів, підтримки й аудиту дій. Кожен клієнт працює в ізольованому Docker-інстансі з PostgreSQL; сервіс розгортання керує пулом контейнерів, RabbitMQ обслуговує черги надсилання листів, а власний поштовий сервер Mailu доповнює екосистему.',
+    },
+    stack: ['python', 'fastapi', 'postgresql', 'docker', 'rabbitmq', 'mailu', 'html-css', 'javascript', 'bootstrap'],
+    links: {
+      live: 'https://test.summyze.com/',
+    },
+    cover: '/shots/summyze/cover-640.webp',
+    shots: [
+      {
+        src: '/shots/summyze/1-1280.webp',
+        caption: {
+          en: 'The demo ticket hub shows AI summaries, categories and products alongside search, filters and CSV export.',
+          uk: 'Демонстраційний список тікетів показує AI-резюме, категорії та продукти, а також пошук, фільтри й експорт CSV.',
+        },
+      },
+      {
+        src: '/shots/summyze/2-1280.webp',
+        caption: {
+          en: 'Ask Over Tickets answers questions across filtered emails and links its findings back to individual tickets.',
+          uk: 'Ask Over Tickets відповідає на запитання за відфільтрованими листами й пов’язує висновки з конкретними тікетами.',
+        },
       },
     ],
   },
@@ -161,7 +499,7 @@ export const projects: Project[] = [
     title: 'TerInfoBot',
     year: 2022,
     status: 'production',
-    featured: true,
+    featured: false,
     summary: {
       en: 'An information portal for my town, built as a gift to it. Microservice architecture: PostgreSQL, a Django backend and an aiogram bot, with a small search site added later.',
       uk: 'Інформаційний портал мого міста — мій подарунок йому. Мікросервісна архітектура: PostgreSQL, бекенд на Django і бот на aiogram; згодом додався невеликий сайт із пошуком.',
@@ -216,7 +554,7 @@ export const projects: Project[] = [
     title: 'HR Bot',
     year: 2024,
     status: 'production',
-    featured: true,
+    featured: false,
     summary: {
       en: 'Helps recruiters find candidates on Work.ua by given criteria. Three parts: a parser, a filtering and sorting layer, and the bot itself on FastAPI + aiogram.',
       uk: 'Допомагає рекрутерам шукати кандидатів на Work.ua за заданими критеріями. Три частини: парсер, шар фільтрації й сортування та сам бот на FastAPI + aiogram.',
@@ -256,7 +594,7 @@ export const projects: Project[] = [
     title: 'Code Review AI',
     year: 2024,
     status: 'pet',
-    featured: true,
+    featured: false,
     summary: {
       en: 'A tool that automates code review: a FastAPI backend, a React front end and GPT doing the reading.',
       uk: 'Інструмент, що автоматизує рев’ю коду: бекенд на FastAPI, фронтенд на React, а читає код GPT.',
@@ -280,15 +618,14 @@ export const projects: Project[] = [
     slug: 'water-bot',
     title: 'Water Bot',
     year: 2022,
-    status: 'production',
+    status: 'archived',
     featured: false,
     summary: {
-      en: 'A water-meter reading bot for my town utility — another gift to the city.',
-      uk: 'Бот для передавання показників водомірів місцевому водоканалу — ще один подарунок місту.',
+      en: 'The original water-meter reading bot for my town utility — a gift to the city. It collected readings in Telegram and prepared an Excel file for the operator; the service was later rebuilt as Water Bot v2.',
+      uk: 'Перша версія бота для передавання показників водомірів місцевому водоканалу — мій подарунок місту. Збирала показники в Telegram і формувала Excel-файл для оператора; згодом сервіс переписано як Water Bot v2.',
     },
     stack: ['python', 'aiogram', 'sqlite'],
     links: {
-      telegram: 'https://t.me/TerebovlaVodokanal_bot',
       youtube: 'https://www.youtube.com/shorts/oUcjWH9b4RE',
     },
     cover: '/shots/water-bot/cover-640.webp',
