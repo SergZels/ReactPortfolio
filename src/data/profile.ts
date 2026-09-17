@@ -7,8 +7,8 @@ export const profile = {
   heroImage: '/shots/_hero/cover-640.webp',
   cvUrl: '/SergiyZelinskii.pdf',
   tagline: {
-    uk: 'Роблю телеграм-ботів, CRM і автоматизацію для малого бізнесу',
-    en: 'I build Telegram bots, CRMs and automation for small businesses',
+    uk: 'AI Agentic Engineer. Розробляю AI-рішення та Python-бекенд для реальних задач.',
+    en: 'AI Agentic Engineer building AI solutions and Python backends for real-world problems.',
   } satisfies Localized,
   about: {
     uk: `Мій шлях у розробці почався в 1998 році з простих ігор на BASIC. Під час навчання в університеті я зацікавився штучним інтелектом і почав писати дисертацію про аналіз медичних зображень. Наукову кар’єру не продовжив: кілька років працював інженером комп’ютерних мереж, а згодом розвивав власний бізнес у комерції.
@@ -194,8 +194,3 @@ Today I work on Python backend and agentic AI at LeadB. I am most interested in 
     } satisfies Localized,
   },
 } as const;
-
-/** Рік перших комерційних проєктів — від нього рахуємо стаж у hero. */
-export const CODING_SINCE = 2012;
-
-export const YEARS_CODING = new Date().getFullYear() - CODING_SINCE;

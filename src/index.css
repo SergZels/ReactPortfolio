@@ -84,7 +84,6 @@ body {
   animation: terminal-cursor 1.25s steps(1) infinite;
 }
 
-:root[data-theme='dark'] .hero-metric,
 :root[data-theme='dark'] .stack-chip {
   border: 1px solid var(--border);
   box-shadow: inset 0 1px rgb(141 246 171 / 5%);
