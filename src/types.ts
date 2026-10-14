@@ -7,6 +7,7 @@ export type StackLevel = 'daily' | 'confident' | 'familiar';
 /** Єдиний дозволений перелік технологій. Захищає фільтр від друкарських помилок. */
 export const KNOWN_STACK = [
   'python',
+  'qiskit',
   'aiogram',
   'telethon',
   'pillow',

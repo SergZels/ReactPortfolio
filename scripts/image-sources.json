@@ -1,4 +1,19 @@
 {
+  "quantum-one": {
+    "folder": "QuantumOne",
+    "cover": "cover.png",
+    "shots": [
+      "cover.png"
+    ]
+  },
+  "smartaps": {
+    "folder": "SmartAPS",
+    "cover": "hardware.svg",
+    "shots": [
+      "hardware.svg",
+      "Знімок екрана 2026-10-12 160102.png"
+    ]
+  },
   "community-ecosystem": {
     "folder": "CommunityEcosystem",
     "cover": "cover.png",

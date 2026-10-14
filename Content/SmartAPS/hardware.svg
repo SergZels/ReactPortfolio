@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">SmartAPS hardware architecture</title>
+  <desc id="desc">A diagram of a 12 volt battery, INA226 voltage sensor, ESP32 controller, relay, UPS, MQTT and FastAPI server.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06110c"/>
+      <stop offset="1" stop-color="#0b1e13"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#11281a"/>
+      <stop offset="1" stop-color="#0b1a11"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#4ee58b" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#60e895"/>
+    </marker>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <circle cx="1380" cy="-40" r="390" fill="#1d8d4d" opacity="0.08"/>
+
+  <text x="90" y="92" fill="#72f4a5" font-family="Consolas, monospace" font-size="23" letter-spacing="5">HARDWARE + EDGE CONTROL</text>
+  <text x="90" y="153" fill="#effff3" font-family="Segoe UI, sans-serif" font-size="54" font-weight="700">SmartAPS</text>
+  <text x="90" y="196" fill="#9bc4a8" font-family="Segoe UI, sans-serif" font-size="22">12 V battery monitoring and resilient UPS automation</text>
+
+  <g font-family="Segoe UI, sans-serif">
+    <rect x="80" y="300" width="260" height="220" rx="24" fill="url(#card)" stroke="#2c6141" stroke-width="2"/>
+    <rect x="130" y="346" width="160" height="112" rx="16" fill="#09140e" stroke="#60e895" stroke-width="3"/>
+    <rect x="290" y="378" width="16" height="50" rx="4" fill="#60e895"/>
+    <rect x="154" y="370" width="8" height="34" fill="#60e895"/>
+    <rect x="141" y="383" width="34" height="8" fill="#60e895"/>
+    <rect x="226" y="383" width="34" height="8" fill="#7b9f86"/>
+    <text x="210" y="483" text-anchor="middle" fill="#effff3" font-size="24" font-weight="700">12 V BATTERY</text>
+    <text x="210" y="550" text-anchor="middle" fill="#91b79d" font-size="17">lead-acid · fused VBS line</text>
+
+    <rect x="440" y="300" width="260" height="220" rx="24" fill="url(#card)" stroke="#2c6141" stroke-width="2"/>
+    <rect x="492" y="345" width="156" height="92" rx="12" fill="#123620" stroke="#60e895" stroke-width="2"/>
+    <circle cx="520" cy="374" r="8" fill="#efc85b"/>
+    <circle cx="620" cy="374" r="8" fill="#efc85b"/>
+    <path d="M518 411 H622" stroke="#60e895" stroke-width="4" stroke-linecap="round"/>
+    <text x="570" y="477" text-anchor="middle" fill="#effff3" font-size="25" font-weight="700">INA226</text>
+    <text x="570" y="509" text-anchor="middle" fill="#91b79d" font-size="17">WCMCU-226 · I²C</text>
+    <text x="570" y="550" text-anchor="middle" fill="#72f4a5" font-size="16">voltage sensing only</text>
+
+    <rect x="800" y="265" width="310" height="290" rx="26" fill="#102b1b" stroke="#60e895" stroke-width="3" filter="url(#glow)"/>
+    <rect x="858" y="324" width="194" height="112" rx="15" fill="#07130c" stroke="#34754c" stroke-width="2"/>
+    <path d="M878 350 H1032 M878 373 H1012 M878 396 H1023" stroke="#60e895" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="955" y="475" text-anchor="middle" fill="#effff3" font-size="30" font-weight="700">ESP32-DevKitC V4</text>
+    <text x="955" y="510" text-anchor="middle" fill="#a8cdb3" font-size="17">GPIO21/22 · I²C   |   GPIO25 · relay</text>
+    <text x="955" y="585" text-anchor="middle" fill="#72f4a5" font-size="18">3 s hardware safety timer</text>
+
+    <rect x="1210" y="300" width="300" height="220" rx="24" fill="url(#card)" stroke="#2c6141" stroke-width="2"/>
+    <rect x="1262" y="345" width="86" height="88" rx="12" fill="#163522" stroke="#e4ba4e" stroke-width="2"/>
+    <rect x="1372" y="345" width="86" height="88" rx="12" fill="#163522" stroke="#496d55" stroke-width="2"/>
+    <circle cx="1305" cy="389" r="18" fill="none" stroke="#e4ba4e" stroke-width="5"/>
+    <circle cx="1415" cy="389" r="18" fill="none" stroke="#496d55" stroke-width="5"/>
+    <text x="1360" y="477" text-anchor="middle" fill="#effff3" font-size="25" font-weight="700">5 V RELAY</text>
+    <text x="1360" y="509" text-anchor="middle" fill="#91b79d" font-size="17">opto-isolated · active LOW</text>
+    <text x="1360" y="550" text-anchor="middle" fill="#72f4a5" font-size="16">10 kΩ reset pull-up</text>
+
+    <path d="M340 410 H428" stroke="#60e895" stroke-width="4" marker-end="url(#arrow)"/>
+    <text x="384" y="391" text-anchor="middle" fill="#a8cdb3" font-size="15">VBS</text>
+    <path d="M700 410 H788" stroke="#60e895" stroke-width="4" marker-end="url(#arrow)"/>
+    <text x="744" y="391" text-anchor="middle" fill="#a8cdb3" font-size="15">I²C</text>
+    <path d="M1110 410 H1198" stroke="#60e895" stroke-width="4" marker-end="url(#arrow)"/>
+    <text x="1154" y="391" text-anchor="middle" fill="#a8cdb3" font-size="15">GPIO25</text>
+
+    <rect x="157" y="666" width="330" height="132" rx="22" fill="#0c1c12" stroke="#264c34" stroke-width="2"/>
+    <text x="322" y="713" text-anchor="middle" fill="#effff3" font-size="23" font-weight="700">UPS SWITCH INPUT</text>
+    <text x="322" y="750" text-anchor="middle" fill="#91b79d" font-size="17">COM + NO dry contact</text>
+    <text x="322" y="779" text-anchor="middle" fill="#72f4a5" font-size="16">3-second control pulse</text>
+
+    <rect x="620" y="666" width="360" height="132" rx="22" fill="#0c1c12" stroke="#264c34" stroke-width="2"/>
+    <text x="800" y="713" text-anchor="middle" fill="#effff3" font-size="23" font-weight="700">Wi-Fi + MQTT</text>
+    <text x="800" y="750" text-anchor="middle" fill="#91b79d" font-size="17">telemetry every 10 seconds</text>
+    <text x="800" y="779" text-anchor="middle" fill="#72f4a5" font-size="16">retained online/offline status</text>
+
+    <rect x="1113" y="666" width="390" height="132" rx="22" fill="#0c1c12" stroke="#264c34" stroke-width="2"/>
+    <text x="1308" y="713" text-anchor="middle" fill="#effff3" font-size="23" font-weight="700">FastAPI + SQLite</text>
+    <text x="1308" y="750" text-anchor="middle" fill="#91b79d" font-size="17">live dashboard · history</text>
+    <text x="1308" y="779" text-anchor="middle" fill="#72f4a5" font-size="16">time / voltage automation</text>
+
+    <path d="M1360 520 C1360 610 420 595 326 654" fill="none" stroke="#e4ba4e" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M900 555 C900 610 820 615 805 654" fill="none" stroke="#60e895" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M980 732 H1100" stroke="#60e895" stroke-width="4" marker-end="url(#arrow)"/>
+  </g>
+
+  <text x="1510" y="858" text-anchor="end" fill="#568064" font-family="Consolas, monospace" font-size="15">SMARTAPS / EDGE POWER AUTOMATION</text>
+</svg>

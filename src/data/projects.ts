@@ -119,6 +119,59 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: 'smartaps',
+    title: 'SmartAPS',
+    year: 2026,
+    status: 'production',
+    featured: false,
+    summary: {
+      en: 'A hardware-and-software controller for a backup power system. An ESP32-DevKitC V4 reads a 12 V lead-acid battery through a WCMCU-226/INA226 sensor over I²C: the fused VBS sensing line measures voltage without routing the battery load through the module’s R100 shunt. GPIO25 drives the first channel of a 5 V opto-isolated relay board; an external 10 kΩ pull-up prevents false activation during reset, and an ESP32 hardware timer always ends the three-second pulse even if Wi-Fi disappears. Firmware supports primary and fallback Wi-Fi, publishes voltage and retained online/offline state through MQTT, and accepts relay commands. FastAPI, SQLite and WebSocket provide history, live monitoring, time- or voltage-based UPS automation, usage estimates, and coordination with SmartSES.',
+      uk: 'Апаратно-програмний контролер системи резервного живлення. ESP32-DevKitC V4 вимірює напругу 12-вольтового свинцево-кислотного акумулятора через модуль WCMCU-226/INA226 по I²C: захищена запобіжником лінія VBS зчитує напругу без пропускання силового струму через шунт R100. GPIO25 керує першим каналом оптоізольованого 5-вольтового реле; зовнішня підтяжка 10 кОм захищає від хибного спрацювання під час перезавантаження, а апаратний таймер ESP32 гарантовано завершує трисекундний імпульс навіть без Wi-Fi. Прошивка підтримує основну й резервну Wi-Fi-мережі, передає напругу та retained-статус online/offline через MQTT і приймає команди реле. FastAPI, SQLite та WebSocket забезпечують історію, live-моніторинг, автоматизацію UPS за часом або порогом напруги, оцінку використаної енергії та взаємодію зі SmartSES.',
+    },
+    stack: ['esp32', 'cpp', 'mqtt', 'python', 'fastapi', 'sqlite', 'javascript', 'docker'],
+    links: {},
+    cover: '/shots/smartaps/cover-640.webp',
+    shots: [
+      {
+        src: '/shots/smartaps/1-1280.webp',
+        caption: {
+          en: 'Hardware architecture: fused battery-voltage sensing through INA226, local ESP32 safety logic, an opto-isolated relay pulse for the UPS, and MQTT telemetry to the server.',
+          uk: 'Апаратна архітектура: захищене запобіжником вимірювання напруги через INA226, локальна safety-логіка ESP32, імпульс оптоізольованого реле для UPS і MQTT-телеметрія на сервер.',
+        },
+      },
+      {
+        src: '/shots/smartaps/2-1280.webp',
+        caption: {
+          en: 'The live dashboard shows battery voltage and estimated charge, UPS automation by time or cutoff voltage, daily runtime and energy estimates, plus a 24-hour voltage history.',
+          uk: 'Live-дашборд показує напругу й орієнтовний заряд акумулятора, автоматизацію UPS за часом або порогом напруги, добовий час роботи й оцінку енергії, а також історію напруги за 24 години.',
+        },
+      },
+    ],
+  },
+  {
+    slug: 'quantum-one',
+    title: 'Quantum One · Bell / CHSH',
+    year: 2026,
+    status: 'pet',
+    featured: false,
+    summary: {
+      en: 'A compact quantum-computing experiment that prepares an entangled qubit pair, measures it across four CHSH settings, and calculates the Bell parameter S. The same Python/Qiskit program runs deterministically on a local state-vector simulator or submits the circuits to an available IBM Quantum processor, where hardware noise makes the result tangible. It also supports configurable shot counts and retrieval of an earlier hardware job by ID.',
+      uk: 'Компактний експеримент із квантових обчислень: програма створює заплутану пару кубітів, вимірює її у чотирьох конфігураціях CHSH та обчислює параметр Белла S. Той самий код на Python/Qiskit працює у локальному state-vector симуляторі або надсилає схеми на доступний процесор IBM Quantum, де результат уже враховує шум реального обладнання. Також можна задавати кількість вимірювань і повторно отримувати результат апаратного завдання за його ID.',
+    },
+    stack: ['python', 'qiskit'],
+    links: {},
+    cover: '/shots/quantum-one/cover-640.webp',
+    shots: [
+      {
+        src: '/shots/quantum-one/1-1280.webp',
+        caption: {
+          en: 'A visual interpretation of the entangled qubit pair and the four measurement settings used in the CHSH experiment.',
+          uk: 'Візуальна інтерпретація заплутаної пари кубітів і чотирьох конфігурацій вимірювання в експерименті CHSH.',
+        },
+      },
+    ],
+  },
+  {
     slug: 'rukodilna-hatynka',
     title: 'Рукодільна хатинка',
     year: 2026,
