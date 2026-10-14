@@ -155,8 +155,8 @@ export const projects: Project[] = [
     status: 'pet',
     featured: false,
     summary: {
-      en: 'A compact quantum-computing experiment that prepares an entangled qubit pair, measures it across four CHSH settings, and calculates the Bell parameter S. The same Python/Qiskit program runs deterministically on a local state-vector simulator or submits the circuits to an available IBM Quantum processor, where hardware noise makes the result tangible. It also supports configurable shot counts and retrieval of an earlier hardware job by ID.',
-      uk: 'Компактний експеримент із квантових обчислень: програма створює заплутану пару кубітів, вимірює її у чотирьох конфігураціях CHSH та обчислює параметр Белла S. Той самий код на Python/Qiskit працює у локальному state-vector симуляторі або надсилає схеми на доступний процесор IBM Quantum, де результат уже враховує шум реального обладнання. Також можна задавати кількість вимірювань і повторно отримувати результат апаратного завдання за його ID.',
+      en: 'My first code for quantum computers. It is a compact experiment that prepares an entangled qubit pair, measures it across four CHSH settings, and calculates the Bell parameter S. The same Python/Qiskit program runs deterministically on a local state-vector simulator or submits the circuits to an available IBM Quantum processor, where hardware noise makes the result tangible. It also supports configurable shot counts and retrieval of an earlier hardware job by ID.',
+      uk: 'Це мій перший код для квантових комп’ютерів. Компактний експеримент створює заплутану пару кубітів, вимірює її у чотирьох конфігураціях CHSH та обчислює параметр Белла S. Той самий код на Python/Qiskit працює у локальному state-vector симуляторі або надсилає схеми на доступний процесор IBM Quantum, де результат уже враховує шум реального обладнання. Також можна задавати кількість вимірювань і повторно отримувати результат апаратного завдання за його ID.',
     },
     stack: ['python', 'qiskit'],
     links: {},
