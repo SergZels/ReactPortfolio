@@ -1,4 +1,25 @@
 {
+  "focus-vr": {
+    "folder": "EyeExercises",
+    "cover": "focus-vr.png",
+    "shots": [
+      "focus-vr.png"
+    ]
+  },
+  "smart-home": {
+    "folder": "SmartHome",
+    "cover": "dashboard.png",
+    "shots": [
+      "dashboard.png"
+    ]
+  },
+  "health-journal": {
+    "folder": "healts",
+    "cover": "Знімок екрана 2026-10-27 094351.png",
+    "shots": [
+      "Знімок екрана 2026-10-27 094351.png"
+    ]
+  },
   "quantum-one": {
     "folder": "QuantumOne",
     "cover": "cover.png",
@@ -11,7 +32,9 @@
     "cover": "hardware.svg",
     "shots": [
       "hardware.svg",
-      "Знімок екрана 2026-10-12 160102.png"
+      "Знімок екрана 2026-10-12 160102.png",
+      "photo_2026-10-27_09-04-25.jpg",
+      "Знімок екрана 2026-10-27 090753.png"
     ]
   },
   "community-ecosystem": {

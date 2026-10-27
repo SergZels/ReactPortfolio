@@ -30,6 +30,8 @@ export const KNOWN_STACK = [
   'sqlalchemy',
   'peewee',
   'html-css',
+  'webxr',
+  'three.js',
   'bootstrap',
   'htmx',
   'javascript',

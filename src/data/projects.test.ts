@@ -8,8 +8,8 @@ const PUBLIC_DIR = resolve(import.meta.dirname, '../../public');
 const localized = (v: Localized) => v.uk.trim().length > 0 && v.en.trim().length > 0;
 
 describe('дані проєктів', () => {
-  it('містить рівно 35 проєктів', () => {
-    expect(projects).toHaveLength(35);
+  it('містить рівно 38 проєктів', () => {
+    expect(projects).toHaveLength(38);
   });
 
   it('має рівно 10 featured-проєктів', () => {

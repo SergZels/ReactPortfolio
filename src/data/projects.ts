@@ -125,8 +125,8 @@ export const projects: Project[] = [
     status: 'production',
     featured: false,
     summary: {
-      en: 'A hardware-and-software controller for a backup power system. An ESP32-DevKitC V4 reads a 12 V lead-acid battery through a WCMCU-226/INA226 sensor over I²C: the fused VBS sensing line measures voltage without routing the battery load through the module’s R100 shunt. GPIO25 drives the first channel of a 5 V opto-isolated relay board; an external 10 kΩ pull-up prevents false activation during reset, and an ESP32 hardware timer always ends the three-second pulse even if Wi-Fi disappears. Firmware supports primary and fallback Wi-Fi, publishes voltage and retained online/offline state through MQTT, and accepts relay commands. FastAPI, SQLite and WebSocket provide history, live monitoring, time- or voltage-based UPS automation, usage estimates, and coordination with SmartSES.',
-      uk: 'Апаратно-програмний контролер системи резервного живлення. ESP32-DevKitC V4 вимірює напругу 12-вольтового свинцево-кислотного акумулятора через модуль WCMCU-226/INA226 по I²C: захищена запобіжником лінія VBS зчитує напругу без пропускання силового струму через шунт R100. GPIO25 керує першим каналом оптоізольованого 5-вольтового реле; зовнішня підтяжка 10 кОм захищає від хибного спрацювання під час перезавантаження, а апаратний таймер ESP32 гарантовано завершує трисекундний імпульс навіть без Wi-Fi. Прошивка підтримує основну й резервну Wi-Fi-мережі, передає напругу та retained-статус online/offline через MQTT і приймає команди реле. FastAPI, SQLite та WebSocket забезпечують історію, live-моніторинг, автоматизацію UPS за часом або порогом напруги, оцінку використаної енергії та взаємодію зі SmartSES.',
+      en: 'A hardware-and-software controller for a backup power system. An ESP32-DevKitC V4 reads a 12 V lead-acid battery through a WCMCU-226/INA226 sensor over I²C: the fused VBS sensing line measures voltage without routing the battery load through the module’s R100 shunt. GPIO25 drives the first channel of a 5 V opto-isolated relay board; an external 10 kΩ pull-up prevents false activation during reset, and an ESP32 hardware timer always ends the three-second pulse even if Wi-Fi disappears. The updated hardware adds an HW-498 NTC temperature-sensor input on GPIO34, and the firmware can include temperature in MQTT telemetry after calibration. FastAPI, SQLite and WebSocket provide history, live monitoring, usage estimates and coordination with SmartSES. UPS automation now includes a voltage-controlled cycle with configurable work and cooling pauses; after cooling it restarts only when a fresh voltage reading is safely above the lower threshold.',
+      uk: 'Апаратно-програмний контролер системи резервного живлення. ESP32-DevKitC V4 вимірює напругу 12-вольтового свинцево-кислотного акумулятора через модуль WCMCU-226/INA226 по I²C: захищена запобіжником лінія VBS зчитує напругу без пропускання силового струму через шунт R100. GPIO25 керує першим каналом оптоізольованого 5-вольтового реле; зовнішня підтяжка 10 кОм захищає від хибного спрацювання під час перезавантаження, а апаратний таймер ESP32 гарантовано завершує трисекундний імпульс навіть без Wi-Fi. Оновлена апаратна частина отримала вхід для NTC-датчика температури HW-498 на GPIO34, а прошивка після калібрування може додавати температуру до MQTT-телеметрії. FastAPI, SQLite та WebSocket забезпечують історію, live-моніторинг, оцінку використаної енергії та взаємодію зі SmartSES. Автоматика UPS тепер має цикл за напругою з окремими налаштуваннями часу роботи й паузи для охолодження; після паузи система запускається знову лише за безпечного актуального показу напруги.',
     },
     stack: ['esp32', 'cpp', 'mqtt', 'python', 'fastapi', 'sqlite', 'javascript', 'docker'],
     links: {},
@@ -144,6 +144,20 @@ export const projects: Project[] = [
         caption: {
           en: 'The live dashboard shows battery voltage and estimated charge, UPS automation by time or cutoff voltage, daily runtime and energy estimates, plus a 24-hour voltage history.',
           uk: 'Live-дашборд показує напругу й орієнтовний заряд акумулятора, автоматизацію UPS за часом або порогом напруги, добовий час роботи й оцінку енергії, а також історію напруги за 24 години.',
+        },
+      },
+      {
+        src: '/shots/smartaps/3-1280.webp',
+        caption: {
+          en: 'The assembled SmartAPS hardware on the UPS: ESP32 controller, INA226 voltage-sensing module, opto-isolated relay board and the added temperature-sensor module.',
+          uk: 'Зібрана апаратна частина SmartAPS на UPS: контролер ESP32, модуль вимірювання напруги INA226, оптоізольована релейна плата та доданий модуль датчика температури.',
+        },
+      },
+      {
+        src: '/shots/smartaps/4-1280.webp',
+        caption: {
+          en: 'The update added a voltage-controlled operating cycle: the UPS starts at the upper threshold, stops at the lower threshold, and can alternate configured work periods with cooling pauses.',
+          uk: 'Оновлення додало циклічний режим роботи за рівнем напруги: UPS запускається на верхньому порозі, вимикається на нижньому та може чергувати задані періоди роботи з паузами для охолодження.',
         },
       },
     ],
@@ -167,6 +181,77 @@ export const projects: Project[] = [
         caption: {
           en: 'A visual interpretation of the entangled qubit pair and the four measurement settings used in the CHSH experiment.',
           uk: 'Візуальна інтерпретація заплутаної пари кубітів і чотирьох конфігурацій вимірювання в експерименті CHSH.',
+        },
+      },
+    ],
+  },
+  {
+    slug: 'health-journal',
+    title: 'Особистий журнал здоров’я',
+    year: 2026,
+    status: 'production',
+    featured: false,
+    summary: {
+      en: 'A private personal health journal for glucose readings, blood pressure and medication courses. The React dashboard visualizes trends, distributions and measurement context, supports mmol/L and mg/dL, preserves uncertain dates and values without inventing precision, and exports records to CSV. A FastAPI and SQLite backend exposes CRUD and analytics APIs, while MCP tools let an AI agent record, update and summarize health data in natural language. Active medication courses can send scheduled Telegram reminders. The Dockerized service is protected by nginx Basic authentication and maintains daily consistent database backups.',
+      uk: 'Приватний особистий журнал для показників глюкози, кров’яного тиску та курсів препаратів. React-дашборд показує динаміку, розподіли й контекст вимірювань, підтримує ммоль/л та мг/дл, зберігає приблизні дати й значення без вигаданої точності та експортує записи у CSV. Бекенд на FastAPI і SQLite надає CRUD та аналітичні API, а MCP-інструменти дають AI-агенту змогу записувати, уточнювати й підсумовувати дані природною мовою. Для активних курсів препаратів доступні Telegram-нагадування за розкладом. Docker-сервіс захищений Basic-автентифікацією через nginx і щодня створює узгоджені резервні копії бази.',
+    },
+    stack: ['python', 'fastapi', 'sqlite', 'react', 'javascript', 'mcp', 'docker', 'nginx'],
+    links: {},
+    cover: '/shots/health-journal/cover-640.webp',
+    shots: [
+      {
+        src: '/shots/health-journal/1-1280.webp',
+        caption: {
+          en: 'The glucose overview combines period statistics, a trend chart, measurement context and the underlying journal in one calm, readable workspace.',
+          uk: 'Огляд глюкози поєднує статистику за період, графік динаміки, контекст вимірювань і журнал записів в одному спокійному та зрозумілому просторі.',
+        },
+      },
+    ],
+  },
+  {
+    slug: 'smart-home',
+    title: 'Smart Home',
+    year: 2026,
+    status: 'production',
+    featured: false,
+    summary: {
+      en: 'A unified observability dashboard for SmartSES, SmartAPS, the MT15/MT29 air-quality monitor, the personal Health service and FoxESS Cloud. FastAPI polls the local energy services every 30 seconds and reads the Tuya sensor directly over the LAN, while PostgreSQL stores deduplicated telemetry and history. The React and Recharts interface combines current energy, UPS and air-quality readings with selectable historical charts and source-availability states. Previously stored data remains visible during source outages. Docker Compose runs the database, API and web interface, with nginx providing the protected HTTPS entry point.',
+      uk: 'Єдиний дашборд спостереження за SmartSES, SmartAPS, датчиком якості повітря MT15/MT29, особистим сервісом Health та FoxESS Cloud. FastAPI кожні 30 секунд опитує локальні енергетичні сервіси й напряму читає Tuya-датчик у локальній мережі, а PostgreSQL зберігає дедупліковану телеметрію та історію. Інтерфейс на React і Recharts поєднує актуальні показники енергосистеми, UPS та якості повітря з історичними графіками й статусами доступності джерел. Збережені дані залишаються доступними навіть під час втрати зв’язку із джерелом. Docker Compose запускає базу, API та вебінтерфейс, а nginx надає захищену HTTPS-точку входу.',
+    },
+    stack: ['python', 'fastapi', 'postgresql', 'react', 'javascript', 'docker', 'nginx'],
+    links: {},
+    cover: '/shots/smart-home/cover-640.webp',
+    shots: [
+      {
+        src: '/shots/smart-home/1-1280.webp',
+        caption: {
+          en: 'The command centre brings solar-battery state, UPS voltage, air quality and links to related services into one responsive workspace.',
+          uk: 'Командний центр об’єднує стан акумулятора СЕС, напругу UPS, якість повітря та переходи до пов’язаних сервісів в одному адаптивному просторі.',
+        },
+      },
+    ],
+  },
+  {
+    slug: 'focus-vr',
+    title: 'Focus VR · Spatial Studio',
+    year: 2026,
+    status: 'production',
+    featured: false,
+    summary: {
+      en: 'A Ukrainian-language WebXR experience for Meta Quest and desktop preview, designed as a calm space for changing visual attention. Four guided modes switch between stationary near, middle and far targets, move an object through depth, trace a wide lateral arc, or guide a planet along a conical spiral. Users can configure pace, session duration and virtual distances from 2 to 30 metres. Three.js renders the same courtyard, HUD and controls on desktop and in the headset; mouse and controller raycasting trigger the same actions, while timing excludes pauses and preferences persist locally. A separate no-headset mode guides real-world screen breaks. The interface clearly explains that the app supports visual comfort and is not a treatment for myopia.',
+      uk: 'Україномовний WebXR-застосунок для Meta Quest із desktop preview, створений як спокійний простір для перемикання зорової уваги. Чотири режими послідовно підсвічують нерухомі ближню, середню й дальню цілі, переміщують об’єкт у глибину, ведуть його широкою дугою або спрямовують планету конічною спіраллю. Користувач налаштовує темп, тривалість сесії та віртуальні відстані від 2 до 30 метрів. Three.js відтворює той самий дворик, HUD і керування на desktop та у шоломі; raycasting миші й контролера запускає спільні дії, таймер не враховує паузи, а параметри зберігаються локально. Окремий режим без шолома проводить реальні перерви від екрана. Інтерфейс прямо пояснює, що застосунок призначений для зорового комфорту, а не лікування міопії.',
+    },
+    stack: ['javascript', 'webxr', 'three.js', 'html-css', 'nginx'],
+    links: {
+      live: 'https://vr.orxid.in.ua/',
+    },
+    cover: '/shots/focus-vr/cover-640.webp',
+    shots: [
+      {
+        src: '/shots/focus-vr/1-1280.webp',
+        caption: {
+          en: 'The Spatial Studio setup combines four guided exercises, adjustable distances and a live Three.js courtyard preview before entering the headset.',
+          uk: 'Налаштування Spatial Studio поєднує чотири керовані вправи, вибір відстаней і live-preview дворика на Three.js перед входом у шолом.',
         },
       },
     ],
