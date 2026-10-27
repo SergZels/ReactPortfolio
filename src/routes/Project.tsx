@@ -8,6 +8,7 @@ import { useMeta } from '../hooks/useMeta';
 import { asset } from '../lib/asset';
 import NotFound from './NotFound';
 import type { Project as ProjectType } from '../types';
+import { technologyLabel } from '../data/technology';
 
 const STATUS_KEY: Record<ProjectType['status'], UiKey> = {
   production: 'statusProduction',
@@ -17,7 +18,7 @@ const STATUS_KEY: Record<ProjectType['status'], UiKey> = {
 
 export default function Project() {
   const { slug } = useParams();
-  const { t, pick } = useLang();
+  const { lang, t, pick } = useLang();
   const project = projects.find((p) => p.slug === slug);
 
   useMeta({
@@ -57,7 +58,7 @@ export default function Project() {
 
         <div className="mt-5 flex flex-wrap gap-x-3 gap-y-1 font-mono text-xs text-text-faint">
           {project.stack.map((tech) => (
-            <span key={tech}>{tech}</span>
+            <span key={tech}>{technologyLabel(tech, lang)}</span>
           ))}
         </div>
 

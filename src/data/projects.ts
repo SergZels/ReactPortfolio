@@ -91,7 +91,7 @@ export const projects: Project[] = [
       en: 'An end-to-end monitoring and control system for a solar power station. ESP32 firmware reads a JBD battery BMS over BLE and publishes telemetry through MQTT; a FastAPI service stores history in SQLite, streams live data over WebSocket, controls timed charging, sends Telegram alerts, and exposes read-only MCP tools for AI agents.',
       uk: 'Наскрізна система моніторингу й керування сонячною електростанцією. Прошивка ESP32 читає JBD BMS через BLE та передає телеметрію через MQTT; сервіс на FastAPI зберігає історію в SQLite, транслює live-дані через WebSocket, керує зарядкою за таймером, надсилає Telegram-алерти й надає read-only MCP-інструменти для AI-агентів.',
     },
-    stack: ['python', 'fastapi', 'mqtt', 'esp32', 'cpp', 'mcp', 'javascript', 'sqlite', 'docker'],
+    stack: ['python', 'fastapi', 'mqtt', 'esp32', 'embedded', 'cpp', 'mcp', 'javascript', 'sqlite', 'docker'],
     links: {},
     cover: '/shots/smartses/cover-640.webp',
     shots: [
@@ -128,7 +128,7 @@ export const projects: Project[] = [
       en: 'A hardware-and-software controller for a backup power system. An ESP32-DevKitC V4 reads a 12 V lead-acid battery through a WCMCU-226/INA226 sensor over I²C: the fused VBS sensing line measures voltage without routing the battery load through the module’s R100 shunt. GPIO25 drives the first channel of a 5 V opto-isolated relay board; an external 10 kΩ pull-up prevents false activation during reset, and an ESP32 hardware timer always ends the three-second pulse even if Wi-Fi disappears. The updated hardware adds an HW-498 NTC temperature-sensor input on GPIO34, and the firmware can include temperature in MQTT telemetry after calibration. FastAPI, SQLite and WebSocket provide history, live monitoring, usage estimates and coordination with SmartSES. UPS automation now includes a voltage-controlled cycle with configurable work and cooling pauses; after cooling it restarts only when a fresh voltage reading is safely above the lower threshold.',
       uk: 'Апаратно-програмний контролер системи резервного живлення. ESP32-DevKitC V4 вимірює напругу 12-вольтового свинцево-кислотного акумулятора через модуль WCMCU-226/INA226 по I²C: захищена запобіжником лінія VBS зчитує напругу без пропускання силового струму через шунт R100. GPIO25 керує першим каналом оптоізольованого 5-вольтового реле; зовнішня підтяжка 10 кОм захищає від хибного спрацювання під час перезавантаження, а апаратний таймер ESP32 гарантовано завершує трисекундний імпульс навіть без Wi-Fi. Оновлена апаратна частина отримала вхід для NTC-датчика температури HW-498 на GPIO34, а прошивка після калібрування може додавати температуру до MQTT-телеметрії. FastAPI, SQLite та WebSocket забезпечують історію, live-моніторинг, оцінку використаної енергії та взаємодію зі SmartSES. Автоматика UPS тепер має цикл за напругою з окремими налаштуваннями часу роботи й паузи для охолодження; після паузи система запускається знову лише за безпечного актуального показу напруги.',
     },
-    stack: ['esp32', 'cpp', 'mqtt', 'python', 'fastapi', 'sqlite', 'javascript', 'docker'],
+    stack: ['esp32', 'embedded', 'cpp', 'mqtt', 'python', 'fastapi', 'sqlite', 'javascript', 'docker'],
     links: {},
     cover: '/shots/smartaps/cover-640.webp',
     shots: [
@@ -172,7 +172,7 @@ export const projects: Project[] = [
       en: 'My first code for quantum computers. It is a compact experiment that prepares an entangled qubit pair, measures it across four CHSH settings, and calculates the Bell parameter S. The same Python/Qiskit program runs deterministically on a local state-vector simulator or submits the circuits to an available IBM Quantum processor, where hardware noise makes the result tangible. It also supports configurable shot counts and retrieval of an earlier hardware job by ID.',
       uk: 'Це мій перший код для квантових комп’ютерів. Компактний експеримент створює заплутану пару кубітів, вимірює її у чотирьох конфігураціях CHSH та обчислює параметр Белла S. Той самий код на Python/Qiskit працює у локальному state-vector симуляторі або надсилає схеми на доступний процесор IBM Quantum, де результат уже враховує шум реального обладнання. Також можна задавати кількість вимірювань і повторно отримувати результат апаратного завдання за його ID.',
     },
-    stack: ['python', 'qiskit'],
+    stack: ['python', 'qiskit', 'quantum-computing'],
     links: {},
     cover: '/shots/quantum-one/cover-640.webp',
     shots: [
@@ -241,7 +241,7 @@ export const projects: Project[] = [
       en: 'A Ukrainian-language WebXR experience for Meta Quest and desktop preview, designed as a calm space for changing visual attention. Four guided modes switch between stationary near, middle and far targets, move an object through depth, trace a wide lateral arc, or guide a planet along a conical spiral. Users can configure pace, session duration and virtual distances from 2 to 30 metres. Three.js renders the same courtyard, HUD and controls on desktop and in the headset; mouse and controller raycasting trigger the same actions, while timing excludes pauses and preferences persist locally. A separate no-headset mode guides real-world screen breaks. The interface clearly explains that the app supports visual comfort and is not a treatment for myopia.',
       uk: 'Україномовний WebXR-застосунок для Meta Quest із desktop preview, створений як спокійний простір для перемикання зорової уваги. Чотири режими послідовно підсвічують нерухомі ближню, середню й дальню цілі, переміщують об’єкт у глибину, ведуть його широкою дугою або спрямовують планету конічною спіраллю. Користувач налаштовує темп, тривалість сесії та віртуальні відстані від 2 до 30 метрів. Three.js відтворює той самий дворик, HUD і керування на desktop та у шоломі; raycasting миші й контролера запускає спільні дії, таймер не враховує паузи, а параметри зберігаються локально. Окремий режим без шолома проводить реальні перерви від екрана. Інтерфейс прямо пояснює, що застосунок призначений для зорового комфорту, а не лікування міопії.',
     },
-    stack: ['javascript', 'webxr', 'three.js', 'html-css', 'nginx'],
+    stack: ['javascript', 'vr', 'webxr', 'three.js', 'html-css', 'nginx'],
     links: {
       live: 'https://vr.orxid.in.ua/',
     },

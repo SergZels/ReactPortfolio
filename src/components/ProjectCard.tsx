@@ -3,6 +3,7 @@ import type { Project } from '../types';
 import { useLang } from '../i18n/LangContext';
 import type { UiKey } from '../i18n/ui';
 import { asset } from '../lib/asset';
+import { technologyLabel } from '../data/technology';
 
 const STATUS_KEY: Record<Project['status'], UiKey> = {
   production: 'statusProduction',
@@ -17,7 +18,7 @@ export function ProjectCard({
   project: Project;
   featured?: boolean;
 }) {
-  const { t, pick } = useLang();
+  const { lang, t, pick } = useLang();
 
   return (
     <Link
@@ -42,7 +43,7 @@ export function ProjectCard({
         </p>
         <div className="mt-3 flex flex-wrap gap-x-3 gap-y-1 font-mono text-xs text-text-faint">
           {project.stack.slice(0, 4).map((tech) => (
-            <span key={tech}>{tech}</span>
+            <span key={tech}>{technologyLabel(tech, lang)}</span>
           ))}
         </div>
         {featured && (

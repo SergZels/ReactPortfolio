@@ -16,12 +16,16 @@ export const UI = {
   levelFamiliar: { uk: 'знайомий', en: 'familiar' },
   casesTitle: { uk: 'Кейси', en: 'Cases' },
   casesAll: { uk: 'Усі', en: 'All' },
+  casesTechnologyFilter: { uk: 'Технології', en: 'Technologies' },
+  casesYearFilter: { uk: 'Роки', en: 'Years' },
+  casesAllTechnologies: { uk: 'Усі технології', en: 'All technologies' },
+  casesAllYears: { uk: 'Усі роки', en: 'All years' },
   // «Other projects» тут не можна: так називається один із проєктів,
   // і заголовок секції збігався б із карткою всередині неї.
   casesRest: { uk: 'Решта проєктів', en: 'More projects' },
   casesEmpty: {
-    uk: 'Немає проєктів із цією технологією',
-    en: 'No projects use this technology',
+    uk: 'Немає проєктів за вибраними фільтрами',
+    en: 'No projects match the selected filters',
   },
   contactTitle: { uk: 'Контакти', en: 'Contact' },
   statusProduction: { uk: 'у продакшені', en: 'production' },

@@ -1,5 +1,6 @@
 import type { Tech } from '../types';
 import { useLang } from '../i18n/LangContext';
+import { technologyLabel } from '../data/technology';
 
 export function StackFilter({
   options,
@@ -10,7 +11,7 @@ export function StackFilter({
   value: Tech | null;
   onChange: (v: Tech | null) => void;
 }) {
-  const { t } = useLang();
+  const { lang, t } = useLang();
 
   const cls = (active: boolean) =>
     `rounded border px-3 py-1 font-mono text-xs ${
@@ -18,11 +19,16 @@ export function StackFilter({
     }`;
 
   return (
-    <div className="flex flex-wrap gap-2">
+    <div
+      className="flex flex-wrap gap-2"
+      role="group"
+      aria-label={t('casesTechnologyFilter')}
+    >
       <button
         type="button"
         onClick={() => onChange(null)}
         aria-pressed={value === null}
+        aria-label={t('casesAllTechnologies')}
         className={cls(value === null)}
       >
         {t('casesAll')}
@@ -35,7 +41,7 @@ export function StackFilter({
           aria-pressed={value === tech}
           className={cls(value === tech)}
         >
-          {tech}
+          {technologyLabel(tech, lang)}
         </button>
       ))}
     </div>
