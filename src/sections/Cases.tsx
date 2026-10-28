@@ -7,6 +7,7 @@ import { StackFilter } from '../components/StackFilter';
 import { YearFilter } from '../components/YearFilter';
 import { Reveal } from '../components/Reveal';
 import { PROMOTED_TECH_FILTERS } from '../data/technology';
+import { projectYears } from '../data/projectYears';
 
 export function Cases() {
   const { t } = useLang();
@@ -27,14 +28,14 @@ export function Cases() {
   }, []);
 
   const years = useMemo(
-    () => [...new Set(projects.map((project) => project.year))].sort((a, b) => b - a),
+    () => [...new Set(projects.flatMap(projectYears))].sort((a, b) => b - a),
     [],
   );
 
   const visible = projects.filter(
     (project) =>
       (filter === null || project.stack.includes(filter)) &&
-      (year === null || project.year === year),
+      (year === null || projectYears(project).includes(year)),
   );
   const featured = visible.filter((p) => p.featured);
   const rest = visible.filter((p) => !p.featured);

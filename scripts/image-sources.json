@@ -375,5 +375,12 @@
     "folder": "_hero",
     "cover": "hero.jpg",
     "shots": []
+  },
+  "terinfo-crm": {
+    "folder": "TerInfoCRM",
+    "cover": "cover.png",
+    "shots": [
+      "cover.png"
+    ]
   }
 }

@@ -83,7 +83,9 @@ export type Shot = {
 export type Project = {
   slug: string;
   title: string;
+  /** Перший рік проєкту; `years` додає інші роки для багаторічних робіт. */
   year: number;
+  years?: number[];
   status: ProjectStatus;
   featured: boolean;
   summary: Localized;

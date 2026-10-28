@@ -3,13 +3,14 @@ import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { KNOWN_STACK, type Localized } from '../types';
 import { projects } from './projects';
+import { projectYearLabel, projectYears } from './projectYears';
 
 const PUBLIC_DIR = resolve(import.meta.dirname, '../../public');
 const localized = (v: Localized) => v.uk.trim().length > 0 && v.en.trim().length > 0;
 
 describe('дані проєктів', () => {
-  it('містить рівно 38 проєктів', () => {
-    expect(projects).toHaveLength(38);
+  it('містить рівно 39 проєктів', () => {
+    expect(projects).toHaveLength(39);
   });
 
   it('має рівно 10 featured-проєктів', () => {
@@ -50,8 +51,11 @@ describe('дані проєктів', () => {
   it.each(projects.map((p) => [p.slug, p] as const))('%s — коректний', (_slug, p) => {
     expect(p.slug).toMatch(/^[a-z0-9-]+$/);
     expect(p.title.trim()).not.toBe('');
-    expect(p.year).toBeGreaterThanOrEqual(2010);
-    expect(p.year).toBeLessThanOrEqual(new Date().getFullYear());
+    expect(projectYears(p)).toContain(p.year);
+    for (const year of projectYears(p)) {
+      expect(year).toBeGreaterThanOrEqual(2010);
+      expect(year).toBeLessThanOrEqual(new Date().getFullYear());
+    }
     expect(localized(p.summary)).toBe(true);
     expect(p.stack.length).toBeGreaterThan(0);
     for (const tech of p.stack) {
@@ -72,4 +76,11 @@ describe('дані проєктів', () => {
       }
     },
   );
+
+  it.each(['community', 'summyze'])('%s триває у 2025–2026 роках', (slug) => {
+    const project = projects.find((item) => item.slug === slug);
+    expect(project).toBeDefined();
+    expect(projectYears(project!)).toEqual([2025, 2026]);
+    expect(projectYearLabel(project!)).toBe('2025–2026');
+  });
 });

@@ -4,6 +4,7 @@ import { useLang } from '../i18n/LangContext';
 import type { UiKey } from '../i18n/ui';
 import { asset } from '../lib/asset';
 import { technologyLabel } from '../data/technology';
+import { projectYearLabel } from '../data/projectYears';
 
 const STATUS_KEY: Record<Project['status'], UiKey> = {
   production: 'statusProduction',
@@ -36,7 +37,9 @@ export function ProjectCard({
       <div className="p-4">
         <div className="flex items-baseline justify-between gap-3">
           <h3 className="font-mono text-sm text-text group-hover:text-accent">{project.title}</h3>
-          <span className="shrink-0 font-mono text-xs text-text-faint">{project.year}</span>
+          <span className="shrink-0 font-mono text-xs text-text-faint">
+            {projectYearLabel(project)}
+          </span>
         </div>
         <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-text-dim">
           {pick(project.summary)}

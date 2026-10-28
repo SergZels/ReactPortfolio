@@ -9,6 +9,7 @@ import { asset } from '../lib/asset';
 import NotFound from './NotFound';
 import type { Project as ProjectType } from '../types';
 import { technologyLabel } from '../data/technology';
+import { projectYearLabel } from '../data/projectYears';
 
 const STATUS_KEY: Record<ProjectType['status'], UiKey> = {
   production: 'statusProduction',
@@ -51,7 +52,7 @@ export default function Project() {
           <span className="rounded bg-surface-2 px-2 py-0.5 font-mono text-xs text-ok">
             {t(STATUS_KEY[project.status])}
           </span>
-          <span className="font-mono text-sm text-text-faint">{project.year}</span>
+          <span className="font-mono text-sm text-text-faint">{projectYearLabel(project)}</span>
         </div>
 
         <p className="mt-4 max-w-2xl leading-relaxed text-text-dim">{pick(project.summary)}</p>

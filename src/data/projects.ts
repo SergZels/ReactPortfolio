@@ -8,7 +8,8 @@ export const projects: Project[] = [
   {
     slug: 'community',
     title: 'Community',
-    year: 2026,
+    year: 2025,
+    years: [2025, 2026],
     status: 'production',
     featured: true,
     summary: {
@@ -158,6 +159,31 @@ export const projects: Project[] = [
         caption: {
           en: 'The update added a voltage-controlled operating cycle: the UPS starts at the upper threshold, stops at the lower threshold, and can alternate configured work periods with cooling pauses.',
           uk: 'Оновлення додало циклічний режим роботи за рівнем напруги: UPS запускається на верхньому порозі, вимикається на нижньому та може чергувати задані періоди роботи з паузами для охолодження.',
+        },
+      },
+    ],
+  },
+  {
+    slug: 'terinfo-crm',
+    title: 'CRM «Діджиталізація Теребовлі»',
+    year: 2025,
+    status: 'production',
+    featured: false,
+    summary: {
+      en: 'An internal CRM for the NGO “Digitalization of Terebovlia”, built around a fully Ukrainian-localized Django Admin. It brings contacts, projects and stages, tasks, documents, finances, events, communication history and reporting into one operational system. Managers can track donors, budgets, deadlines, follow-ups and grant progress, while role-based access separates administrators, project managers and volunteers. Project, financial and grant reports can be filtered and exported to CSV. Django ORM supports SQLite in development and PostgreSQL in production; Docker Compose, Gunicorn and nginx package the deployed service.',
+      uk: 'Внутрішня CRM для громадської організації «Діджиталізація Теребовлі», побудована навколо повністю україномовної Django Admin. В одній операційній системі вона об’єднує контакти, проєкти та етапи, задачі, документи, фінанси, події, історію комунікацій і звітність. Менеджери можуть контролювати донорів, бюджети, дедлайни, фоллоуапи та прогрес грантів, а рольовий доступ розділяє адміністраторів, менеджерів проєктів і волонтерів. Проєктні, фінансові та грантові звіти підтримують фільтри й експорт у CSV. Django ORM працює з SQLite у розробці та PostgreSQL у продакшені; сервіс розгорнуто через Docker Compose, Gunicorn і nginx.',
+    },
+    stack: ['python', 'django', 'postgresql', 'sqlite', 'docker', 'nginx', 'html-css'],
+    links: {
+      live: 'https://crm.terebinfo.in.ua/admin/',
+    },
+    cover: '/shots/terinfo-crm/cover-640.webp',
+    shots: [
+      {
+        src: '/shots/terinfo-crm/1-1280.webp',
+        caption: {
+          en: 'A privacy-safe conceptual view of the CRM modules and their connections; no real contacts, finances or internal organization data are shown.',
+          uk: 'Безпечна концептуальна візуалізація модулів CRM та зв’язків між ними — без реальних контактів, фінансів чи внутрішніх даних організації.',
         },
       },
     ],
@@ -509,6 +535,7 @@ export const projects: Project[] = [
     slug: 'summyze',
     title: 'SUMMYZE',
     year: 2025,
+    years: [2025, 2026],
     status: 'production',
     featured: true,
     summary: {

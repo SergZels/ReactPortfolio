@@ -5,6 +5,7 @@ import { describe, expect, it } from 'vitest';
 import { LangProvider } from '../i18n/LangContext';
 import { projects } from '../data/projects';
 import { PROMOTED_TECH_FILTERS } from '../data/technology';
+import { projectYears } from '../data/projectYears';
 import type { Tech } from '../types';
 import { Cases } from './Cases';
 
@@ -72,15 +73,15 @@ describe('секція кейсів', () => {
 
   it('фільтр за роком лишає лише проєкти вибраного року', async () => {
     const user = userEvent.setup();
-    const year = Math.max(...projects.map((project) => project.year));
+    const year = Math.max(...projects.flatMap(projectYears));
     renderCases();
 
     await user.click(screen.getByRole('button', { name: String(year) }));
 
-    for (const project of projects.filter((item) => item.year === year)) {
+    for (const project of projects.filter((item) => projectYears(item).includes(year))) {
       expect(screen.getByText(project.title)).toBeInTheDocument();
     }
-    for (const project of projects.filter((item) => item.year !== year)) {
+    for (const project of projects.filter((item) => !projectYears(item).includes(year))) {
       expect(screen.queryByText(project.title)).not.toBeInTheDocument();
     }
   });
@@ -91,18 +92,30 @@ describe('секція кейсів', () => {
     const matching = projects.filter((project) => (project.stack as string[]).includes(tech));
     const candidate = matching.at(0);
     if (!candidate) throw new Error('немає проєкту для комбінованого фільтра');
-    const year = candidate.year;
+    const year = projectYears(candidate).at(-1)!;
     renderCases();
 
     await user.click(screen.getByRole('button', { name: tech }));
     await user.click(screen.getByRole('button', { name: String(year) }));
 
     for (const project of projects) {
-      const shouldBeVisible = project.year === year && (project.stack as string[]).includes(tech);
+      const shouldBeVisible =
+        projectYears(project).includes(year) && (project.stack as string[]).includes(tech);
       const assertion = shouldBeVisible ? screen.getByText(project.title) : screen.queryByText(project.title);
       if (shouldBeVisible) expect(assertion).toBeInTheDocument();
       else expect(assertion).not.toBeInTheDocument();
     }
+  });
+
+  it.each(['Community', 'SUMMYZE'])('%s показується у фільтрах 2025 і 2026', async (title) => {
+    const user = userEvent.setup();
+    renderCases();
+
+    await user.click(screen.getByRole('button', { name: '2025' }));
+    expect(screen.getByText(title)).toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: '2026' }));
+    expect(screen.getByText(title)).toBeInTheDocument();
   });
 
   it('у фільтрі немає технологій, що трапляються лише раз', () => {
